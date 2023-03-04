@@ -1,0 +1,34 @@
+@use '../custom' as *;
+
+.rounded-btn{
+    background: $secondary;
+    color: $black;
+    padding: 6px 1rem;
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.rounded-btn-lg{
+    background: $secondary;
+    color: $black;
+    font-size: 1.125rem;
+    padding: .75rem 2rem;
+    border-radius: 3rem;
+    font-weight: 500;
+}
+.rounded-btn-outline{
+    background: transparent;
+    color: $secondary;
+    padding: 6px 1rem;
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 1rem;
+    border: 1px solid $secondary;
+    transition: .4s ease-in-out;
+
+    &:hover{
+        background: $secondary;
+        color: $black;
+    }
+}

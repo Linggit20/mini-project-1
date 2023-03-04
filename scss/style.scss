@@ -1,0 +1,15 @@
+@use './custom' as *;
+
+// IMPORT COMPONENTS
+@use './components/offcanvas';
+@use './components/buttons';
+@use './components/typography';
+
+
+
+// IMPORT SECTION
+@use './sections/navbar';
+@use './sections/hero';
+@use './sections/guide';
+@use './sections/about';
+@use './sections/menu'

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodTrip</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./assets/css/fontawesome.css">
+    <!-- Google FOnt Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-dark">
+    <!-- Offcanvas code  Here -->
+    <div class="left-side-nav">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="leftSideNav" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Faq</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+    </div>
+    <div class="cart-manager-container">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="cartManager" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Manage your cart here</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              ...
+            </div>
+          </div>
+    </div>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container d-flex">
+                <a class="navbar-brand" href="index.html">
+                    <span><i class="fa-solid fa-utensils"></i></span>
+                    FoodTrip
+                </a>
+                <button class="navbar-toggler" type="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#leftSideNav" aria-controls="offcanvasWithBothOptions">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item show">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item show">
+                            <a class="nav-link" href="#about  ">About</a>
+                        </li>
+                        <li class="nav-item show">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item show">
+                            <a class="nav-link" href="#">Reviews</a>
+                        </li>
+                        <li class="nav-item show">
+                            <a class="nav-link" href="#">Faq</a>
+                        </li>
+                        <li class="nav-item show">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-side-nav">
+                    <form action="" class="search-box" id="searchBar">
+                        <input type="search" class="search-input" placeholder="Search....">
+                        <div class="search-btn" id="searchBtn">
+                          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </div>
+                    </form>
+                    <a href="#" class="rounded-btn">Sign Up</a>
+                    <button class="cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartManager" aria-controls="staticBackdrop">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- Main  -->
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container-fluid">
+                <div class="title text-center text-white">
+                    <h1 class="display-2">A taste you'll remember</h1>
+                    <h2>
+                        You dont need to travel to eat delicious food. We are here now<br>
+                        <span class="text-secondary">AVAILABLE NATIONWIDE!</span>
+                    </h2>
+                </div>
+                <a href="" class="rounded-btn-lg">Our Menu</a>
+            </div>
+            <div class="social">
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+            </div>  
+        </section>
+        <section id="guid" class="guide-section py-5">
+            <div class="container">
+                <h1>How it Works?</h1>
+                <div class="row guid-container justify-content-center">
+                    <div class="col-md-4 guid-list">
+                        <div class="card bg-dark">
+                            <div class="img-container">
+                                <img src="./images/landing-page/login.svg" class="card-img-top" alt="..."> 
+                                <span class="off-shape">1</span>                                                                                    
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <h5>Sign up and go to Menu</h5>
+                                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 guid-list">
+                        <div class="card bg-dark">
+                            <div class="img-container">
+                                <img src="./images/landing-page/delivery.svg" class="card-img-top" alt="...">
+                                <span>2</span> 
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <h5>We Deliver your order</h5>
+                                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 guid-list">
+                        <div class="card bg-dark">
+                            <div class="img-container">
+                                <img src="./images/landing-page/cheers.svg" class="card-img-top" alt="...">
+                                <span>3</span> 
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <h5>Enjoy your Food</h5>
+                                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-section">
+            <div class="container mt-3 py-5">
+                <div class="row about-container">
+                    <div class="col-md-5 img-container">
+                        <img src="./images/landing-page/about-image.png" alt="" width="100%">
+                    </div>
+                    <div class="col-md-5 offset-lg-1 about-text">
+                        <h1>About Us</h1>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Dolorum maxime voluptas, impedit veniam maiores nemo cumque 
+                            ipsa non laboriosam exercitationem? Minima commodi, voluptas 
+                            ab molestiae labore amet sit quae consequuntur.ab molestiae labore amet sit quae consequuntur
+                            ab molestiae labore amet sit quae consequuntur.
+                        </p>
+                        <a class="rounded-btn-outline" href="">Learn More &#8594</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="menu" class="menu-section">
+            <span></span>
+            <div class="container">
+
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+
+    <!-- Bootstrap Js -->
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <!-- Custom Js -->
+    <script src="./assets/js/custom.js"></script>
+</body>
+</html>

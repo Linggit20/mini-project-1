@@ -1,0 +1,24 @@
+@use '../custom' as *;
+
+.menu-section{
+
+    span{
+        background-attachment: fixed;
+        height: 30vh;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.226), rgba(48, 47, 47, 0.103)), url('../../images/landing-page/useForParallaxe.jpg-1.png');
+        background-position: center;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        padding: 0;
+        margin: 0;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+    .container{
+        height: 400vh;
+    }
+}

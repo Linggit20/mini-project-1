@@ -1,0 +1,71 @@
+@use '../custom' as *;
+
+.hero-section{
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.61), rgba(48, 47, 47, 0.226)), url(../../images/landing-page/hero-bg-img.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    
+    .container-fluid{
+        position: relative;
+        padding: 1rem 0;
+        .title{
+            margin: 0 0 5rem 0;
+
+            h1{
+                &.display-2{
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    position: relative;
+                    margin: 0 0 2rem;
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: 2.125rem;
+                    }
+                }
+    
+            }
+            h2{
+                font-size: 1.5rem;
+                max-width: 786px;
+                margin: auto;
+
+                @include media-breakpoint-down(xs) {
+                    font-size: 1.125rem;
+                }
+
+            }
+        }
+        
+        .rounded-btn-lg{
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 160px;
+            margin: 0 auto;
+        }
+    }
+
+    .social{
+        position: absolute;
+        bottom: 2rem;
+
+        a{
+            text-decoration: none;
+
+            i{
+                font-size: 2.5rem;
+                color: $white;
+                margin: 0 2rem 0;
+            }
+        }
+    }
+}
