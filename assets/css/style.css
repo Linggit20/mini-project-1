@@ -11947,6 +11947,13 @@ header .navbar .right-side-nav .cart {
   text-align: center;
   padding: 1rem 0 2.5rem;
 }
+@media screen and (max-width: 576px) {
+  .menu-section .container .menu-container .menu-content {
+    width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
 .menu-section .container .menu-container .menu-content .menu-item .card {
   border: none;
 }
@@ -11971,7 +11978,7 @@ header .navbar .right-side-nav .cart {
     height: 160px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .menu-section .container .menu-container .menu-content .menu-item .card .image-container img {
     height: 180px;
   }

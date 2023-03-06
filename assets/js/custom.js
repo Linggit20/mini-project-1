@@ -126,7 +126,6 @@ cartContainers.forEach(cartContainer => {
 const swiper = new Swiper(".menu-content", {
     slidesPerView: 4,
     spaceBetween: 25,
-    freeMode: true,
     grabCursor: true,
     pagination: {
       el: ".swiper-pagination",
@@ -138,6 +137,8 @@ const swiper = new Swiper(".menu-content", {
   window.addEventListener('resize', () => {
     if (window.innerWidth <= 576) {
       swiper.params.slidesPerView = 1;
+      swiper.params.spaceBetween = 35;
+
       swiper.update();
     } else if (window.innerWidth >= 576 && window.innerWidth <= 768 ) {
         swiper.params.slidesPerView = 2;
