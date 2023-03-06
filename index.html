@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FoodTrip</title>
     <!-- Css -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="./assets/css/fontawesome.css">
     <!-- Google FOnt Link -->
@@ -175,13 +177,15 @@
                 </div>
             </div>
         </section>
+        <!-- About Section -->
         <section id="about" class="about-section">
             <div class="container mt-3 py-5">
-                <div class="row about-container">
-                    <div class="col-md-5 img-container">
-                        <img src="./images/landing-page/about-image.png" alt="" width="100%">
+                <h1 class="text-center lg-title">About Us</h1>
+                <div class="row about-container justify-content-center">
+                    <div class="col-lg-6 img-container">
+                        <img src="./images/landing-page/about-image.png" alt="">
                     </div>
-                    <div class="col-md-5 offset-lg-1 about-text">
+                    <div class="col-lg-6 about-text">
                         <h1>About Us</h1>
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
@@ -196,9 +200,108 @@
             </div>
         </section>
         <section id="menu" class="menu-section">
-            <span></span>
             <div class="container">
-
+                <h1 class="text-white py-4 text-center">Our Menu</h1>
+                <p class="text-white text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Nemo laborum praesentium error nulla unde fuga nam ea reprehenderit mollitia quasi.error 
+                    nulla unde fuga nam ea reprehenderit mollitia quasi.
+                </p>
+                <div class="row menu-container swiper">
+                    <div class="col-md menu-content">
+                        <div class="menu-item swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="image-container">
+                                    <img src="./images/menu/menu-1.jpg" class="card-img-top" alt="...">
+                                    <span id="price">$99</span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <button id="addToCart" class="rounded-btn" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-container">
+                                    <img src="./images/menu/menu-2.jpg" class="card-img-top" alt="...">
+                                    <span id="price">$99</span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <button id="addToCart" class="rounded-btn" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-container">
+                                    <img src="./images/menu/menu-3.jpg" class="card-img-top" alt="...">
+                                    <span id="price">$99</span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <button id="addToCart" class="rounded-btn" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-container">
+                                    <img src="./images/menu/menu-4.jpg" class="card-img-top" alt="...">
+                                    <span id="price">$99</span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <button id="addToCart" class="rounded-btn" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-container">
+                                    <img src="./images/menu/menu-5.jpg" class="card-img-top" alt="...">
+                                    <span id="price">$99</span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <button id="addToCart" class="rounded-btn" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-container">
+                                    <img src="./images/menu/menu-6.jpg" class="card-img-top" alt="...">
+                                    <span id="price">$99</span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <button id="addToCart" class="rounded-btn" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-container">
+                                    <img src="./images/menu/menu-7.jpg" class="card-img-top" alt="...">
+                                    <span id="price">$99</span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <button id="addToCart" class="rounded-btn" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-container">
+                                    <img src="./images/menu/menu-8.jpg" class="card-img-top" alt="...">
+                                    <span id="price">$99</span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <button id="addToCart" class="rounded-btn" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -209,6 +312,8 @@
 
     <!-- Bootstrap Js -->
     <script src="./assets/js/bootstrap.bundle.js"></script>
+    <!-- Swiper Js -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <!-- Custom Js -->
     <script src="./assets/js/custom.js"></script>
 </body>

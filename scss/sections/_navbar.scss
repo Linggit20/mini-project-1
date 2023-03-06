@@ -5,6 +5,7 @@ header{
     .navbar{
         background: $primary;
         height: 75px;
+        transition: .3 ease-in-out;
 
         &.navbar-scroll-show{
             bottom: 0;
@@ -79,8 +80,8 @@ header{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 35px;
-                width: 35px;
+                height: 40px;
+                width: 40px;
                 position: relative;
                 transition: .4s;
                 margin: 0 1rem 0 0;
@@ -89,7 +90,7 @@ header{
                     width: 220px;
 
                     @include media-breakpoint-down(lg) {
-                        width: 200px;
+                        width: 195px;
                         z-index: 1;
                     }
                 }
@@ -112,8 +113,8 @@ header{
                 border: none;
                 background: $white;
                 position: absolute;
-                height: 35px;
-                width: 35px;
+                height: 40px;
+                width: 40px;
                 right: 0;
                 cursor: pointer;
 

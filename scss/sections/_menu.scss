@@ -2,23 +2,83 @@
 
 .menu-section{
 
-    span{
-        background-attachment: fixed;
-        height: 30vh;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.226), rgba(48, 47, 47, 0.103)), url('../../images/landing-page/useForParallaxe.jpg-1.png');
-        background-position: center;
-        width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: block;
-        padding: 0;
-        margin: 0;
-
-        @include media-breakpoint-down(md) {
-            display: none;
-        }
-    }
     .container{
-        height: 400vh;
+       position: relative;
+
+       .menu-container{
+            text-align: center;
+            padding: 1rem 0 2.5rem;
+
+            .menu-content{
+
+                .menu-item{
+                    
+                    .card{
+                        border: none;
+                        
+                        @include media-breakpoint-up(md) {
+                            transition: all .2s ease-in-out; 
+
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+
+                        .image-container{
+                            position: relative;
+
+                            img{
+                                background-position: center;
+                                background-size: cover;
+
+                                @include media-breakpoint-up(xm) {
+                                    height: 200px;
+                                }
+                                @include media-breakpoint-up(sm) {
+                                    height: 160px;
+                                }
+                                @include media-breakpoint-up(md) {
+                                    height: 180px;
+                                }
+                            }
+
+                            span{
+                                position: absolute;
+                                top: .5rem;
+                                right: .5rem;
+                                background: $secondary;
+                                padding: 0 6px;
+                                border-radius: 4px;
+                                font-weight: 500;
+                                font-size: 1.125rem;
+                            }
+                        }
+
+                        .card-body{
+                            background: $primary;
+                            color: $white;
+
+                            .card-title{
+                                font-weight: 600;
+                            }
+
+                            .card-text{
+                                font-size: .875rem;
+                            }
+                        }
+                    }
+                }
+
+                .swiper-pagination-bullet{
+                    background: $white;
+                    opacity: 1;
+
+                    &.swiper-pagination-bullet-active{
+                        background: $secondary;
+                    }
+                
+                }
+            }
+       }
     }
 }
