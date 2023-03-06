@@ -123,6 +123,7 @@ cartContainers.forEach(cartContainer => {
     });
 });
 
+
 const swiper = new Swiper(".menu-content", {
     slidesPerView: 4,
     spaceBetween: 25,
@@ -131,26 +132,28 @@ const swiper = new Swiper(".menu-content", {
       el: ".swiper-pagination",
       clickable: true,
       dynamicBullets: true,
-    },
-  });
-  
-  window.addEventListener('resize', () => {
-    if (window.innerWidth <= 576) {
-      swiper.params.slidesPerView = 1;
-      swiper.params.spaceBetween = 35;
+    }, 
+    breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 35,
+        },
+        460: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 35,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 35,
+        },
 
-      swiper.update();
-    } else if (window.innerWidth >= 576 && window.innerWidth <= 768 ) {
-        swiper.params.slidesPerView = 2;
-        swiper.update();
-      }
-      else if (window.innerWidth >= 768 && window.innerWidth <= 992 ) {
-        swiper.params.slidesPerView = 3;
-        swiper.update();
-      }
-    
-    else {
-      swiper.params.slidesPerView = 4;
-      swiper.update();
-    }
-  });
+    },
+});
