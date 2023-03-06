@@ -11608,6 +11608,56 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.cart-manager-container .offcanvas .offcanvas-header {
+  background: #663C2A;
+  height: 75px;
+}
+.cart-manager-container .offcanvas .offcanvas-header h5 {
+  color: #fff;
+}
+.cart-manager-container .offcanvas .offcanvas-body {
+  background: #212529;
+}
+.cart-manager-container .offcanvas .offcanvas-body .cart-container {
+  text-align: center;
+}
+.cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item {
+  margin: 0 0 1rem 0;
+}
+.cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card {
+  border: none;
+}
+.cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .image-container {
+  position: relative;
+}
+.cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .image-container img {
+  background-position: center;
+  background-size: cover;
+  height: 110px;
+}
+.cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .image-container span {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  color: #663C2A;
+  background: #F9F871;
+  font-weight: 500;
+  padding: 0 6px;
+}
+.cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .card-body {
+  background: #663C2A;
+}
+.cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .card-body .card-title {
+  font-weight: 600;
+  color: #fff;
+}
+.cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .card-body .rounded-btn {
+  font-size: 0.875rem;
+}
+.cart-manager-container .offcanvas .offcanvas-body .cart-total {
+  margin: 1rem 0;
+}
+
 .rounded-btn {
   background: #F9F871;
   color: #000;

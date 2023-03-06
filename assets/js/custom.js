@@ -79,51 +79,50 @@ searchButton.addEventListener("click", () =>{
     };
 });
 
-window.addEventListener("resize", () => {
-    if (window.innerWidth >= 991) {
-        navbarBrand.style.display = "block";
-    }
-});
 
-// Adding and removing item to cart
-
-const addToCartButtons = document.querySelectorAll('.add-cart');
-const cartContainers = document.querySelectorAll('.cart-container');
+// Adding item to cart
+const addToCartButtons = document.querySelectorAll(".add-cart");
+const cartContainers = document.querySelectorAll(".cart-container");
 
 addToCartButtons.forEach(addToCartButton => {
-    addToCartButton.addEventListener('click', function(event) {
-
-        const cardElement = event.target.closest('.card');
+    addToCartButton.addEventListener("click", function(event) {
+        const cardElement = event.target.closest(".card");
         const clonedCardElement = cardElement.cloneNode(true);
-        clonedCardElement.style.width = "";
     
         const newDiv = document.createElement("div");
         newDiv.classList.add("col-6", "cart-item");
         newDiv.appendChild(clonedCardElement);
     
-        const removeButton = newDiv.querySelector('.add-cart');
-        removeButton.classList.remove('add-cart');
-        removeButton.classList.add('remove-cart');
-        removeButton.textContent = "Remove from cart";
+        const removeButton = newDiv.querySelector(".add-cart");
+        removeButton.classList.remove("add-cart");
+        removeButton.classList.add("remove-cart");
+        removeButton.textContent = "Remove";
+
+        const removeCardText = newDiv.querySelector(".card-text");
+        removeCardText.remove();
+        
 
         cartContainers.forEach(cartContainer => {
             cartContainer.appendChild(newDiv);
         });
+
+        alert("Item successfully added to cart!");
+
     });
 });
 
+// remove Item from Cart
 cartContainers.forEach(cartContainer => {
-    cartContainer.addEventListener('click', function(event) {
+    cartContainer.addEventListener("click", function(event) {
 
         if (event.target.classList.contains('remove-cart')) {
-            const cardToRemove = event.target.closest('.col-6');
+            const cardToRemove = event.target.closest(".col-6");
             cardToRemove.remove();
-
         }
     });
 });
 
-
+// Menu swiper slide
 const swiper = new Swiper(".menu-content", {
     slidesPerView: 4,
     spaceBetween: 25,

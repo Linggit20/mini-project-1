@@ -57,7 +57,29 @@
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              ...
+              <div class="row cart-container">
+                <!-- <div class="col-6 cart-item">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="./images/menu/menu-1.jpg" class="card-img-top" alt="...">
+                            <span class="price">$99</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <button class="rounded-btn" type="button">Romove</button>
+                        </div>
+                    </div>
+                </div> -->
+              </div>             
+              <div class="cart-total text-white">
+                    <div class="total-price">
+                        <h5>Total Price: 
+                            <span id="totalPrice"></span>
+                        </h5>
+                    </div>
+                   <button class="rounded-btn">Check Out</button>
+                </div>
+              </div>
             </div>
           </div>
     </div>
@@ -84,10 +106,10 @@
                             <a class="nav-link" href="#menu">Menu</a>
                         </li>
                         <li class="nav-item show">
-                            <a class="nav-link" href="#">Reviews</a>
+                            <a class="nav-link" href="#reviews">Reviews</a>
                         </li>
                         <li class="nav-item show">
-                            <a class="nav-link" href="#">Faq</a>
+                            <a class="nav-link" href="#faq">Faq</a>
                         </li>
                         <li class="nav-item show">
                             <a class="nav-link" href="#">Contact Us</a>
@@ -218,12 +240,12 @@
                                 <div class="card">
                                     <div class="image-container">
                                         <img src="./images/menu/menu-1.jpg" class="card-img-top" alt="...">
-                                        <span id="price">$99</span>
+                                        <span class="price">$99</span>
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <button id="addToCart" class="rounded-btn" type="button">Add to cart</button>
+                                        <button class="rounded-btn add-cart" type="button">Add to cart</button>
                                     </div>
                                 </div>
                             </div>                           
@@ -231,12 +253,12 @@
                                 <div class="card">
                                     <div class="image-container">
                                         <img src="./images/menu/menu-2.jpg" class="card-img-top" alt="...">
-                                        <span id="price">$99</span>
+                                        <span class="price">$99</span>
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <button id="addToCart" class="rounded-btn" type="button">Add to cart</button>
+                                        <button class="rounded-btn add-cart" type="button">Add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -244,12 +266,12 @@
                                 <div class="card">
                                     <div class="image-container">
                                         <img src="./images/menu/menu-3.jpg" class="card-img-top" alt="...">
-                                        <span id="price">$99</span>
+                                        <span class="price">$99</span>
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <button id="addToCart" class="rounded-btn" type="button">Add to cart</button>
+                                        <button class="rounded-btn add-cart" type="button">Add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -257,12 +279,12 @@
                                 <div class="card">
                                     <div class="image-container">
                                         <img src="./images/menu/menu-4.jpg" class="card-img-top" alt="...">
-                                        <span id="price">$99</span>
+                                        <span class="price">$99</span>
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <button id="addToCart" class="rounded-btn" type="button">Add to cart</button>
+                                        <button class="rounded-btn add-cart" type="button">Add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -270,12 +292,12 @@
                                 <div class="card">
                                     <div class="image-container">
                                         <img src="./images/menu/menu-5.jpg" class="card-img-top" alt="...">
-                                        <span id="price">$99</span>
+                                        <span class="price">$99</span>
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <button id="addToCart" class="rounded-btn" type="button">Add to cart</button>
+                                        <button class="rounded-btn add-cart" type="button">Add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -283,12 +305,12 @@
                                 <div class="card">
                                     <div class="image-container">
                                         <img src="./images/menu/menu-6.jpg" class="card-img-top" alt="...">
-                                        <span id="price">$99</span>
+                                        <span class="price">$99</span>
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <button id="addToCart" class="rounded-btn" type="button">Add to cart</button>
+                                        <button class="rounded-btn add-cart" type="button">Add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -296,12 +318,12 @@
                                 <div class="card">
                                     <div class="image-container">
                                         <img src="./images/menu/menu-7.jpg" class="card-img-top" alt="...">
-                                        <span id="price">$99</span>
+                                        <span class="price">$99</span>
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <button id="addToCart" class="rounded-btn" type="button">Add to cart</button>
+                                        <button class="rounded-btn add-cart" type="button">Add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -309,12 +331,12 @@
                                 <div class="card">
                                     <div class="image-container">
                                         <img src="./images/menu/menu-8.jpg" class="card-img-top" alt="...">
-                                        <span id="price">$99</span>
+                                        <span class="price">$99</span>
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <button id="addToCart" class="rounded-btn" type="button">Add to cart</button>
+                                        <button class="rounded-btn add-cart" type="button">Add to cart</button>
                                     </div>
                                 </div>
                             </div>

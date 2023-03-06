@@ -1,0 +1,71 @@
+@use '../custom' as *;
+
+.cart-manager-container{
+
+    .offcanvas{
+
+        .offcanvas-header{  
+            background: $primary;
+            height: 75px;
+
+            h5{
+                color: $white;
+            }
+
+        }
+
+        .offcanvas-body{
+            background: $gray-900;
+
+            .cart-container{
+                text-align: center;
+
+                .cart-item{
+                    margin: 0 0 1rem 0;
+
+                    .card{
+                        border: none;
+
+                        .image-container{
+                            position: relative;
+
+                            img{
+                                background-position: center;
+                                background-size: cover;
+                                height: 110px;
+                            }
+
+                            span{
+                                position: absolute;
+                                top: 6px;
+                                right: 6px;
+                                color: $primary;
+                                background: $secondary;
+                                font-weight: 500;
+                                padding: 0 6px;
+
+                            }
+                        }
+
+                        .card-body{
+                            background: $primary;
+
+                            .card-title{
+                                font-weight: 600;
+                                color: $white;
+                            }
+
+                            .rounded-btn{
+                                font-size: .875rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cart-total{
+                margin: 1rem 0;
+            }
+        }
+    }
+}
