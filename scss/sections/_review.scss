@@ -1,0 +1,46 @@
+@use '../custom' as *;
+
+.reviews-section{
+    background: rgba($black, 10%);
+
+    .container{
+        
+        .review-container{
+
+            .review-content{
+
+                .card{
+                    background: transparent;
+                    border: 1px solid $white;
+                    padding: 1rem 0;
+
+                    img{
+                        width: 150px;
+                        height: 150px;
+                        margin: auto;
+                    }
+
+                    .card-body{
+                        text-align: center;
+    
+                        .card-text{
+                            font-size: .875rem;
+                        }
+
+                        .card-title{
+                            padding: 1rem 0;
+                        }
+
+                        .ratings{
+
+                            i{
+                                font-size: 1rem;
+                                color: $secondary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

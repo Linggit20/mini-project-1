@@ -8,6 +8,7 @@
        .menu-container{
             text-align: center;
             padding: 1rem 0 2.5rem;
+            margin: 0 0 1rem;
 
             .menu-content{
 
@@ -87,6 +88,14 @@
                 
                 }
             }
+       }
+
+       .rounded-btn{
+            text-decoration: none;
+            display: block;
+            margin: 0 auto;
+            width: 160px;
+            text-align: center;
        }
     }
 }

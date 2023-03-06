@@ -154,4 +154,3 @@ const swiper = new Swiper(".menu-content", {
       swiper.update();
     }
   });
-  

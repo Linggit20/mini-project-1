@@ -1,0 +1,75 @@
+@use '../custom' as *;
+
+footer{
+    background: rgba($primary, 15%);
+
+    .footer-section{
+    
+        .footer-content{
+    
+            .footer-link{
+    
+                .footer-brand{
+                    color: $white;
+                    font-weight: 700;
+                    font-size: 2rem;
+                    text-decoration: none;
+        
+                    span{
+                        color: $secondary;
+                    }
+                }
+            }
+            
+            .site-link{
+
+                .footer-nav{
+                    padding: 0;
+
+                    .footer-nav-item{
+                        list-style: none;
+
+                        .footer-nav-link{
+                            text-decoration: none;
+                            color: $white;
+                            font-size: .875rem;
+                        }
+                    }
+                }
+            }
+
+            .social-link{
+                ul{
+                    padding: 0;
+
+                    li{
+                        list-style: none;
+
+                        a{
+                            text-decoration: none;
+                            color: $white;
+                            font-size: .875rem;
+                        }
+                    }
+                }
+            }
+
+            .other-link{
+
+                ul{
+                    padding: 0;
+
+                    li{
+                        list-style: none;
+
+                        a{
+                            text-decoration: none;
+                            color: $white;
+                            font-size: .875rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

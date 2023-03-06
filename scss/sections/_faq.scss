@@ -1,0 +1,38 @@
+@use '../custom' as *;
+
+.faq-section{
+
+    .container{
+
+        h1{
+            color: $white;
+            font-family: 600;
+            text-align: center;
+        }
+    }
+    
+    .accordion{
+        display: block;
+        margin: 0  auto;
+        @include media-breakpoint-up(lg) {
+            max-width: 	960px;
+
+        }
+       .accordion-item{
+
+            .accordion-header{
+
+                button{
+                    font-weight: 500;
+                }
+            }
+
+            .accordion-collapse{
+                
+                .accordion-body{
+
+                }
+            }
+       }
+    }
+}
