@@ -5,7 +5,7 @@
     color: $black;
     padding: 6px 1rem;
     border-radius: 3rem;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1rem;
     border: 1px solid $secondary;
     transition: all .3s ease-in-out;
@@ -18,9 +18,9 @@
 
 .rounded-btn-lg{
     background: $secondary;
-    color: $black;
+    color: $primary;
     font-size: 1.125rem;
-    padding: .75rem 2rem;
+    padding: .625rem 2rem;
     border-radius: 3rem;
     font-weight: 500;
     border: 1px solid $secondary;
@@ -36,7 +36,7 @@
     color: $secondary;
     padding: 6px 1rem;
     border-radius: 3rem;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1rem;
     border: 1px solid $secondary;
     transition: .4s ease-in-out;

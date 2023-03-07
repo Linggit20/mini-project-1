@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body class="bg-dark">
-    <!-- Offcanvas code  Here -->
+    <!-- Offcanvas code Here -->
     <div class="left-side-nav">
         <div class="offcanvas offcanvas-start" tabindex="-1" id="leftSideNav" aria-labelledby="offcanvasLabel">
             <div class="offcanvas-header">
@@ -54,7 +54,9 @@
         <div class="offcanvas offcanvas-end" tabindex="-1" id="cartManager" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">
             <div class="offcanvas-header">
               <h5 id="offcanvasRightLabel">Manage your cart here</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button type="button" class="btn-close-canvas" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
             </div>
             <div class="offcanvas-body">
               <div class="row cart-container">
@@ -135,13 +137,14 @@
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero-section">
-            <div class="container-fluid">
-                <div class="title text-center text-white">
+            <div class="container">
+                <div class="title">
                     <h1 class="display-2">A taste you'll remember</h1>
-                    <h2>
-                        You dont need to travel to eat delicious food. We are here now<br>
-                        <span class="text-secondary">AVAILABLE NATIONWIDE!</span>
-                    </h2>
+                    <p>
+                        Satisfy your cravings at home! Our delicious food is now nationwide.
+                        Get top-quality taste and convenience without leaving your doorstep.
+                        Order now for the ultimate dining experience!
+                    </p>
                 </div>
                 <a href="" class="rounded-btn-lg">Our Menu</a>
             </div>
@@ -165,7 +168,10 @@
                             <div class="card-body">
                                 <div class="card-text">
                                     <h5>Sign up and go to Menu</h5>
-                                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p>
+                                        Explore our fresh, delicious dishes with just a few clicks.
+                                        Our entire menu is waiting for you to discover and start your culinary journey today!
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -179,7 +185,10 @@
                             <div class="card-body">
                                 <div class="card-text">
                                     <h5>We Deliver your order</h5>
-                                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p>
+                                        Relax and let us bring your order straight to your doorstep!
+                                        We offer convenient delivery services to make enjoying our delicious food even easier.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -193,7 +202,10 @@
                             <div class="card-body">
                                 <div class="card-text">
                                     <h5>Enjoy your Food</h5>
-                                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p>
+                                        Indulge in the ultimate dining experience and savor every bite of our mouth-watering cuisine.
+                                        With exceptional taste and quality, we guarantee that you'll enjoy every moment of your meal.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -212,11 +224,9 @@
                     <div class="col-lg-6 about-text">
                         <h1>About Us</h1>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Dolorum maxime voluptas, impedit veniam maiores nemo cumque 
-                            ipsa non laboriosam exercitationem? Minima commodi, voluptas 
-                            ab molestiae labore amet sit quae consequuntur.ab molestiae labore amet sit quae consequuntur
-                            ab molestiae labore amet sit quae consequuntur.
+                            At FoodTrip, we are passionate about providing our customers with the highest quality food and exceptional dining experiences. 
+                            Our team of expert chefs use only the freshest ingredients to create delicious, mouth-watering dishes that are sure to delight your taste buds.
+                            Whether you're dining in or ordering online, our goal is to exceed your expectations and make every visit to our restaurant a memorable one.
                         </p>
                         <a class="rounded-btn-outline" href="">Learn More &#8594</a>
                     </div>
@@ -226,11 +236,9 @@
         <!-- Menu Section -->
         <section id="menu" class="menu-section">
             <div class="container py-4">
-                <h1 class="text-white text-center">Our Menu</h1>
-                <p class="text-white text-center">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Nemo laborum praesentium error nulla unde fuga nam ea reprehenderit mollitia quasi.error 
-                    nulla unde fuga nam ea reprehenderit mollitia quasi.
+                <h1 class="text-white text-center mb-3">Our Menu</h1>
+                <p class="text-white">
+                    Experience culinary excellence with our menu selection, featuring a wide array of dishes prepared with only the freshest and finest ingredients. Be sure to take advantage of our special discounted items for the month to elevate your dining experience without breaking the bank.
                 </p>
                 <div class="row menu-container swiper">
                     <div class="menu-content text-center">
@@ -242,8 +250,8 @@
                                         <span class="price">$99</span>
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h5 class="card-title">Strawberry Pancake</h5>
+                                        <p class="card-text"> Fluffy stacks of goodness, topped with juicy slices of fresh strawberries</p>
                                         <button class="rounded-btn add-cart" type="button">Add to cart</button>
                                     </div>
                                 </div>
@@ -255,8 +263,8 @@
                                         <span class="price">$99</span>
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h5 class="card-title">Grilled Barbecue</h5>
+                                        <p class="card-text">Juicy grilled BBQ meat with caramelized char marks. A savory and satisfying meal</p>
                                         <button class="rounded-btn add-cart" type="button">Add to cart</button>
                                     </div>
                                 </div>
@@ -268,8 +276,8 @@
                                         <span class="price">$99</span>
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h5 class="card-title">Beef Steak</h5>
+                                        <p class="card-text">Juicy beef with parsley and thyme herbs cooked to perfection for a flavorful dish</p>
                                         <button class="rounded-btn add-cart" type="button">Add to cart</button>
                                     </div>
                                 </div>
@@ -281,8 +289,8 @@
                                         <span class="price">$99</span>
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h5 class="card-title">Grilled Meat</h5>
+                                        <p class="card-text">Enjoy a delectable meal with our grilled meat and fresh green ladies finger vegetables</p>
                                         <button class="rounded-btn add-cart" type="button">Add to cart</button>
                                     </div>
                                 </div>
@@ -294,8 +302,8 @@
                                         <span class="price">$99</span>
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h5 class="card-title">Vegetable Noodles</h5>
+                                        <p class="card-text">Vegetable Noodle Bowl with Greens and Carrots in a Savory Broth</p>
                                         <button class="rounded-btn add-cart" type="button">Add to cart</button>
                                     </div>
                                 </div>
@@ -307,8 +315,8 @@
                                         <span class="price">$99</span>
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h5 class="card-title">Fried shrimp and squid</h5>
+                                        <p class="card-text">Crispy deep-fried shrimp and squid served with lemon slices on a ceramic plate</p>
                                         <button class="rounded-btn add-cart" type="button">Add to cart</button>
                                     </div>
                                 </div>
@@ -320,8 +328,8 @@
                                         <span class="price">$99</span>
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h5 class="card-title">Fried Spring Rolls</h5>
+                                        <p class="card-text">Crispy fried spring rolls stuffed with vegetables and served with a savory dipping sauce</p>
                                         <button class="rounded-btn add-cart" type="button">Add to cart</button>
                                     </div>
                                 </div>
@@ -333,8 +341,8 @@
                                         <span class="price">$99</span>
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h5 class="card-title">Pasta Dish</h5>
+                                        <p class="card-text">Creamy penne pasta with sun-dried tomatoes, basil, and Parmesan cheese</p>
                                         <button class="rounded-btn add-cart" type="button">Add to cart</button>
                                     </div>
                                 </div>
@@ -348,9 +356,13 @@
         </section>
         <!-- Reviews Section -->
         <section id="reviews" class="reviews-section">
-            <div class="container py-5">
-                <h1 class="text-white">Reviews</h1>
-                <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus quo reprehenderit eaque quae cupiditate sequi suscipit inventore eum, iusto illo ex at quibusdam hic adipisci beatae rerum fugiat ab cumque!</p>
+            <div class="container py-4">
+                <h1 class="text-white text-center mb-3">Reviews</h1>
+                <p class="text-white">
+                    Explore our reviews section for honest and insightful thoughts from our valued customers.
+                    Discover what sets us apart, from our delicious dishes to our quality of service.
+                    See why our customers keep coming back for more and find out what they have to say about their experience with us.
+                </p>
                 <div class="row text-white justify-content-center py-3 review-container">
                     <div class="col-md my-3 review-content">
                         <div class="card">
@@ -405,9 +417,12 @@
         </section>
         <!-- FAQ Section--> 
         <section id="faq" class="faq-section">
-            <div class="container py-5">
+            <div class="container py-4">
                 <h1 class="mb-3">Frequently Asked Questions</h1>
-                <p class="text-center text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore magnam consequatur rem sed nesciunt excepturi itaque rerum, sit deserunt.</p>
+                <p class="text-white">
+                    Get answers to your questions with our FAQ section! Learn more about our menu, service, and other offerings.
+                    We've gathered some of the most common questions from our customers to help you make informed decisions about food and dining. Check it out now!
+                </p>
                 <div class="accordion py-3" id="accordionExample">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">

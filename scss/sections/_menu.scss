@@ -128,6 +128,7 @@
                     .card{
                         border: none;
                         transition: all .2s ease-in-out;
+                        height: 400px;
         
                         &:hover{
                             transform: scale(1.1);
@@ -167,18 +168,24 @@
                     .card-body{
                         background: $primary;
                         color: $white;
+                        padding: 1rem .5rem;
+                        position: relative;
 
                         .card-title{
                             font-weight: 600;
                         }
         
                         .card-text{
-        
-        
+                            font-size: .875rem;
+
                         }
 
                         .rounded-btn{
-
+                            position: absolute;
+                            bottom: 1rem;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            font-weight: 400;
                         }
         
                     }

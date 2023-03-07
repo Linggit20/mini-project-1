@@ -11614,6 +11614,13 @@ textarea.form-control-lg {
 }
 .cart-manager-container .offcanvas .offcanvas-header h5 {
   color: #fff;
+  margin: 0;
+}
+.cart-manager-container .offcanvas .offcanvas-header .btn-close-canvas {
+  background: transparent;
+  font-size: 1.5rem;
+  color: #fff;
+  border: none;
 }
 .cart-manager-container .offcanvas .offcanvas-body {
   background: #212529;
@@ -11646,13 +11653,21 @@ textarea.form-control-lg {
 }
 .cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .card-body {
   background: #663C2A;
+  padding: 0.875rem 2px;
+  height: 120px;
+  position: relative;
 }
 .cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .card-body .card-title {
   font-weight: 600;
   color: #fff;
+  font-size: 1rem;
 }
 .cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .card-body .rounded-btn {
   font-size: 0.875rem;
+  position: absolute;
+  bottom: 0.875rem;
+  transform: translateX(-50%);
+  font-weight: 400;
 }
 .cart-manager-container .offcanvas .offcanvas-body .cart-total {
   margin: 1rem 0;
@@ -11678,7 +11693,7 @@ textarea.form-control-lg {
   width: 140px;
   margin: 1rem auto;
   border-radius: 3rem;
-  font-weight: 500;
+  font-weight: 400;
   transition: 0.4s ease-in-out;
   border: 1px solid #663C2A;
   padding: 0.5rem;
@@ -11693,7 +11708,7 @@ textarea.form-control-lg {
   color: #000;
   padding: 6px 1rem;
   border-radius: 3rem;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1rem;
   border: 1px solid #F9F871;
   transition: all 0.3s ease-in-out;
@@ -11705,9 +11720,9 @@ textarea.form-control-lg {
 
 .rounded-btn-lg {
   background: #F9F871;
-  color: #000;
+  color: #663C2A;
   font-size: 1.125rem;
-  padding: 0.75rem 2rem;
+  padding: 0.625rem 2rem;
   border-radius: 3rem;
   font-weight: 500;
   border: 1px solid #F9F871;
@@ -11723,7 +11738,7 @@ textarea.form-control-lg {
   color: #F9F871;
   padding: 6px 1rem;
   border-radius: 3rem;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1rem;
   border: 1px solid #F9F871;
   transition: 0.4s ease-in-out;
@@ -11882,48 +11897,15 @@ header .navbar .right-side-nav .cart {
   background-size: cover;
   background-position: center;
   padding: 0 1rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 980px;
-  position: relative;
-}
-.hero-section .container-fluid {
-  position: relative;
-  padding: 1rem 0;
-}
-.hero-section .container-fluid .title {
-  margin: 0 0 5rem 0;
-}
-.hero-section .container-fluid .title h1.display-2 {
-  font-weight: 800;
-  text-transform: uppercase;
-  position: relative;
-  margin: 0 0 2rem;
-}
-@media (max-width: 575.98px) {
-  .hero-section .container-fluid .title h1.display-2 {
-    font-size: 2.125rem;
-  }
-}
-.hero-section .container-fluid .title h2 {
-  font-size: 1.5rem;
-  max-width: 786px;
-  margin: auto;
-  font-size: 1.125rem;
-}
-.hero-section .container-fluid .rounded-btn-lg {
-  text-decoration: none;
+  height: 865px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 160px;
-  margin: 0 auto;
+  position: relative;
 }
 .hero-section .social {
   position: absolute;
-  bottom: 2rem;
+  bottom: 3rem;
 }
 .hero-section .social a {
   text-decoration: none;
@@ -11931,7 +11913,51 @@ header .navbar .right-side-nav .cart {
 .hero-section .social a i {
   font-size: 2.5rem;
   color: #fff;
-  margin: 0 2rem 0;
+  margin: 0 1.5rem;
+}
+.hero-section .container {
+  padding: 1rem 0;
+}
+.hero-section .container .title {
+  text-align: center;
+}
+.hero-section .container .title h1.display-2 {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 3px;
+}
+@media (max-width: 575.98px) {
+  .hero-section .container .title h1.display-2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+}
+.hero-section .container .title p {
+  color: #fff;
+  max-width: 768px;
+  margin: 0 auto 3rem;
+  letter-spacing: 1px;
+  line-height: 1.75rem;
+  font-size: 18px;
+}
+@media (max-width: 767.98px) {
+  .hero-section .container .title p {
+    max-width: 568px;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero-section .container .title p {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+}
+.hero-section .container .rounded-btn-lg {
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  text-align: center;
 }
 
 .guide-section .container h1 {
@@ -12050,6 +12076,7 @@ header .navbar .right-side-nav .cart {
 .menu-section .menu-container .menu-content .menu-item .menu-list .card {
   border: none;
   transition: all 0.2s ease-in-out;
+  height: 400px;
 }
 .menu-section .menu-container .menu-content .menu-item .menu-list .card:hover {
   transform: scale(1.1);
@@ -12085,9 +12112,21 @@ header .navbar .right-side-nav .cart {
 .menu-section .menu-container .menu-content .menu-item .menu-list .card-body {
   background: #663C2A;
   color: #fff;
+  padding: 1rem 0.5rem;
+  position: relative;
 }
 .menu-section .menu-container .menu-content .menu-item .menu-list .card-body .card-title {
   font-weight: 600;
+}
+.menu-section .menu-container .menu-content .menu-item .menu-list .card-body .card-text {
+  font-size: 0.875rem;
+}
+.menu-section .menu-container .menu-content .menu-item .menu-list .card-body .rounded-btn {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 400;
 }
 .menu-section .menu-container .menu-content .swiper-pagination-bullet {
   background: #fff;
@@ -12146,10 +12185,10 @@ header .navbar .right-side-nav .cart {
   }
 }
 .faq-section .accordion .accordion-item .accordion-header button {
-  font-weight: 500;
+  font-weight: 400;
 }
 footer {
-  background: rgba(102, 60, 42, 0.15);
+  background: rgba(51, 51, 51, 0.6431372549);
 }
 footer .footer-section .footer-content .footer-link .footer-brand {
   color: #fff;
@@ -12171,6 +12210,9 @@ footer .footer-section .footer-content .site-link .footer-nav .footer-nav-item .
   color: #fff;
   font-size: 0.875rem;
 }
+footer .footer-section .footer-content .site-link .footer-nav .footer-nav-item .footer-nav-link:hover {
+  text-decoration: underline;
+}
 footer .footer-section .footer-content .social-link ul {
   padding: 0;
 }
@@ -12182,6 +12224,9 @@ footer .footer-section .footer-content .social-link ul li a {
   color: #fff;
   font-size: 0.875rem;
 }
+footer .footer-section .footer-content .social-link ul li a:hover {
+  text-decoration: underline;
+}
 footer .footer-section .footer-content .other-link ul {
   padding: 0;
 }
@@ -12192,6 +12237,9 @@ footer .footer-section .footer-content .other-link ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 0.875rem;
+}
+footer .footer-section .footer-content .other-link ul li a:hover {
+  text-decoration: underline;
 }
 
 .form-signin {
