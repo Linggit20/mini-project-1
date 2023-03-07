@@ -12199,7 +12199,7 @@ footer .footer-section .footer-content .other-link ul li a {
   padding: 10rem 1rem;
 }
 .form .container {
-  background: rgba(255, 255, 255, 0.486);
+  background: rgba(255, 255, 255, 0.74);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   max-width: 768px;
@@ -12257,7 +12257,7 @@ footer .footer-section .footer-content .other-link ul li a {
 }
 
 .form-signin {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./../../../images/form-page/new-bg.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../../images/form-page/new-bg.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -12266,7 +12266,7 @@ footer .footer-section .footer-content .other-link ul li a {
   padding: 10rem 1rem;
 }
 .form-signin .container {
-  background: rgba(255, 255, 255, 0.486);
+  background: rgba(255, 255, 255, 0.74);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   max-width: 568px;

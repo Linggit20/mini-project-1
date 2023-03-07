@@ -1,7 +1,7 @@
 @use '../../custom' as *;
 
 .form-signin{
-    background-image: linear-gradient(to right, rgba($black, 25%),rgba($black, 25%)), url('./../../../images/form-page/new-bg.jpg');
+    background-image: linear-gradient(to right, rgba($black, 25%),rgba($black, 25%)), url('../../../images/form-page/new-bg.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -10,7 +10,7 @@
     padding: 10rem 1rem;
 
     .container{  
-        background: rgba(255, 255, 255, 0.486);
+        background: rgba(255, 255, 255, 0.74);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         max-width: 568px;
