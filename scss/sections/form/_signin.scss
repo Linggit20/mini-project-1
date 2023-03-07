@@ -1,7 +1,7 @@
 @use '../../custom' as *;
 
 .form-signin{
-    background-image: linear-gradient(to right, rgba($black, 15%),rgba($black, 15%)), url('../../../images/form/form-banner.jpg');
+    background-image: linear-gradient(to right, rgba($black, 15%),rgba($black, 15%)), url('../../../images/form/form-bg.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
