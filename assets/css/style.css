@@ -12190,7 +12190,7 @@ footer .footer-section .footer-content .other-link ul li a {
 }
 
 .form {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../../../images/form-page/new-bg.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../../../images/landing-page/new-bg.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -12257,7 +12257,7 @@ footer .footer-section .footer-content .other-link ul li a {
 }
 
 .form-signin {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../../images/form-page/new-bg.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../../images/landing-page/new-bg.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
