@@ -1,9 +1,9 @@
 @use '../custom' as *;
 
 .form-signin{
-    background-image: linear-gradient(to right, rgba($black, 25%),rgba($black, 25%)), url(../../images/form/form-bg.jpg);
-    background-position: center;
+    background-image: linear-gradient(to right, rgba($black, 25%),rgba($black, 25%)), url(../../images/form/background.jpg);
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
