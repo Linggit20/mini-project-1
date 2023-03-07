@@ -46,3 +46,19 @@
         color: $black;
     }
 }
+
+.submit-btn{
+    display: block;
+    margin: auto;
+    width: 140px;
+    padding: .625rem;
+    border-radius: 3rem;
+    border: 1px solid $primary;
+    transition: .4s ease-in-out;
+    color: $white;
+
+    &:hover{
+        background: transparent;
+        color: $primary;
+    }
+}

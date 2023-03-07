@@ -11658,6 +11658,36 @@ textarea.form-control-lg {
   margin: 1rem 0;
 }
 
+.left-side-nav .offcanvas .offcanvas-header {
+  height: 75px;
+  border-bottom: 1px solid #ced4da;
+}
+.left-side-nav .offcanvas .offcanvas-header h5 {
+  font-weight: 500;
+}
+.left-side-nav .offcanvas .offcanvas-body {
+  background: #f8f9fa;
+}
+.left-side-nav .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link {
+  font-size: 1rem;
+}
+.left-side-nav .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link.sign-up {
+  background: #663C2A;
+  text-align: center;
+  color: #F9F871;
+  width: 140px;
+  margin: 1rem auto;
+  border-radius: 3rem;
+  font-weight: 500;
+  transition: 0.4s ease-in-out;
+  border: 1px solid #663C2A;
+  padding: 0.5rem;
+}
+.left-side-nav .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link.sign-up:hover {
+  background: transparent;
+  color: #663C2A;
+}
+
 .rounded-btn {
   background: #F9F871;
   color: #000;
@@ -11701,6 +11731,21 @@ textarea.form-control-lg {
 .rounded-btn-outline:hover {
   background: #F9F871;
   color: #000;
+}
+
+.submit-btn {
+  display: block;
+  margin: auto;
+  width: 140px;
+  padding: 0.625rem;
+  border-radius: 3rem;
+  border: 1px solid #663C2A;
+  transition: 0.4s ease-in-out;
+  color: #fff;
+}
+.submit-btn:hover {
+  background: transparent;
+  color: #663C2A;
 }
 
 body {
@@ -12141,6 +12186,117 @@ footer .footer-section .footer-content .other-link ul li {
 footer .footer-section .footer-content .other-link ul li a {
   text-decoration: none;
   color: #fff;
+  font-size: 0.875rem;
+}
+
+.form {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../../../images/form/form-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 1rem;
+}
+.form .container {
+  background: rgba(255, 255, 255, 0.486);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  max-width: 768px;
+  padding: 1.5rem 2rem 2rem;
+}
+.form .container form h1 {
+  font-weight: 600;
+  color: #663C2A;
+}
+.form .container form .email-wrapper label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.form .container form .email-wrapper input {
+  padding: 0.75rem;
+}
+.form .container form .email-wrapper input:focus {
+  box-shadow: none;
+}
+.form .container form .password-wrapper label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.form .container form .password-wrapper input {
+  padding: 0.75rem;
+}
+.form .container form .password-wrapper input:focus {
+  box-shadow: none;
+}
+.form .container form .contact-wrapper label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.form .container form .contact-wrapper input {
+  padding: 0.75rem;
+}
+.form .container form .contact-wrapper input:focus {
+  box-shadow: none;
+}
+.form .container form .address-wrapper label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.form .container form .address-wrapper input {
+  padding: 0.75rem;
+}
+.form .container form .address-wrapper input:focus {
+  box-shadow: none;
+}
+.form .container form .form-check-wrapper label {
+  font-size: 0.875rem;
+}
+.form .container form p {
+  font-size: 0.875rem;
+}
+
+.form-signin {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../../../images/form/form-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 1rem;
+}
+.form-signin .container {
+  background: rgba(255, 255, 255, 0.486);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  max-width: 568px;
+  padding: 1.5rem 2rem 2rem;
+}
+.form-signin .container form h1 {
+  font-weight: 600;
+  color: #663C2A;
+}
+.form-signin .container form .email-wrapper label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.form-signin .container form .email-wrapper input {
+  padding: 0.75rem;
+}
+.form-signin .container form .email-wrapper input:focus {
+  box-shadow: none;
+}
+.form-signin .container form .password-wrapper label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.form-signin .container form .password-wrapper input {
+  padding: 0.75rem;
+}
+.form-signin .container form .password-wrapper input:focus {
+  box-shadow: none;
+}
+.form-signin .container form p {
   font-size: 0.875rem;
 }
 

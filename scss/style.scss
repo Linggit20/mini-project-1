@@ -16,3 +16,7 @@
 @use './sections/review';
 @use './sections/faq';
 @use './sections/footer';
+
+// IMPORT PAGES
+@use './sections/form/signup';
+@use './sections/form/signin';

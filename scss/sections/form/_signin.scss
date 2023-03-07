@@ -1,0 +1,63 @@
+@use '../../custom' as *;
+
+.form-signin{
+    background-image: linear-gradient(to right, rgba($black, 15%),rgba($black, 15%)), url('../../../images/form/form-banner.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 1rem;
+
+    .container{  
+        background: rgba(255, 255, 255, 0.486);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        max-width: 568px;
+        padding: 1.5rem 2rem 2rem;
+
+        form{
+            
+            h1{
+                font-weight: 600;
+                color: $primary;
+            }
+            .email-wrapper{
+                
+                label{
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+                input{ 
+                    padding: .75rem;
+
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+
+            }
+
+            .password-wrapper{
+
+                label{
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+                input{ 
+                    padding: .75rem;
+
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+
+            }
+
+            p{
+                font-size: .875rem;
+            }
+            
+        }
+    }
+}
