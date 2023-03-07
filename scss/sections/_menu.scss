@@ -122,7 +122,9 @@
             .menu-item{
                 
                 .menu-list{
-
+                    @media screen and (max-width: 459px) {
+                        padding: 0 1.375rem;
+                    }
                     .card{
                         border: none;
                         transition: all .2s ease-in-out;

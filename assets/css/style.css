@@ -12042,6 +12042,11 @@ header .navbar .right-side-nav .cart {
   padding: 2rem 0 3rem;
   margin: 1rem 0;
 }
+@media screen and (max-width: 459px) {
+  .menu-section .menu-container .menu-content .menu-item .menu-list {
+    padding: 0 1.375rem;
+  }
+}
 .menu-section .menu-container .menu-content .menu-item .menu-list .card {
   border: none;
   transition: all 0.2s ease-in-out;
