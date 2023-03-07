@@ -18,5 +18,5 @@
 @use './sections/footer';
 
 // IMPORT PAGES
-@use './sections/form/signup';
-@use './sections/form/signin';
+@use './form/signin';
+@use './form/signup';

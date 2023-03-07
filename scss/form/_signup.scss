@@ -1,7 +1,7 @@
-@use '../../custom' as *;
+@use '../custom' as *;
 
-.form-signin{
-    background-image: linear-gradient(to right, rgba($black, 25%),rgba($black, 25%)), url(../../../images/form/form-bg.jpg);
+.form{
+    background-image: linear-gradient(to right, rgba($black, 25%),rgba($black, 25%)), url(../../images/form/form-bg.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -13,7 +13,7 @@
         background: rgba(255, 255, 255, 0.74);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        max-width: 568px;
+        max-width: 768px;
         padding: 1.5rem 2rem 2rem;
 
         form{
@@ -52,6 +52,44 @@
                     }
                 }
 
+            }
+            .contact-wrapper{
+
+                label{
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+                input{ 
+                    padding: .75rem;
+
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+
+            }
+
+            .address-wrapper{
+
+                label{
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+                input{ 
+                    padding: .75rem;
+
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+
+            }
+
+            .form-check-wrapper{
+                
+                label{
+                    font-size: .875rem;
+                }
             }
 
             p{

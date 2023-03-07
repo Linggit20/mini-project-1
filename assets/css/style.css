@@ -12189,8 +12189,52 @@ footer .footer-section .footer-content .other-link ul li a {
   font-size: 0.875rem;
 }
 
+.form-signin {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/form/form-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 1rem;
+}
+.form-signin .container {
+  background: rgba(255, 255, 255, 0.74);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  max-width: 568px;
+  padding: 1.5rem 2rem 2rem;
+}
+.form-signin .container form h1 {
+  font-weight: 600;
+  color: #663C2A;
+}
+.form-signin .container form .email-wrapper label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.form-signin .container form .email-wrapper input {
+  padding: 0.75rem;
+}
+.form-signin .container form .email-wrapper input:focus {
+  box-shadow: none;
+}
+.form-signin .container form .password-wrapper label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.form-signin .container form .password-wrapper input {
+  padding: 0.75rem;
+}
+.form-signin .container form .password-wrapper input:focus {
+  box-shadow: none;
+}
+.form-signin .container form p {
+  font-size: 0.875rem;
+}
+
 .form {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../../images/form/form-bg.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/form/form-bg.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -12253,50 +12297,6 @@ footer .footer-section .footer-content .other-link ul li a {
   font-size: 0.875rem;
 }
 .form .container form p {
-  font-size: 0.875rem;
-}
-
-.form-signin {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../../images/form/form-bg.jpg);
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10rem 1rem;
-}
-.form-signin .container {
-  background: rgba(255, 255, 255, 0.74);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  max-width: 568px;
-  padding: 1.5rem 2rem 2rem;
-}
-.form-signin .container form h1 {
-  font-weight: 600;
-  color: #663C2A;
-}
-.form-signin .container form .email-wrapper label {
-  font-size: 1rem;
-  font-weight: 500;
-}
-.form-signin .container form .email-wrapper input {
-  padding: 0.75rem;
-}
-.form-signin .container form .email-wrapper input:focus {
-  box-shadow: none;
-}
-.form-signin .container form .password-wrapper label {
-  font-size: 1rem;
-  font-weight: 500;
-}
-.form-signin .container form .password-wrapper input {
-  padding: 0.75rem;
-}
-.form-signin .container form .password-wrapper input:focus {
-  box-shadow: none;
-}
-.form-signin .container form p {
   font-size: 0.875rem;
 }
 
