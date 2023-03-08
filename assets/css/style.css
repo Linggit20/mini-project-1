@@ -12093,8 +12093,12 @@ header .navbar .right-side-nav .cart {
   line-height: 1.75rem;
   margin: 0 0 2.5rem 0;
 }
-.about-section .container .about-container .about-text .rounded-btn-outline {
+.about-section .container .about-container .about-text .learn-more {
   text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+.about-section .container .about-container .about-text .learn-more:hover {
+  color: #663C2A;
 }
 
 .menu-section .container {
@@ -12113,7 +12117,11 @@ header .navbar .right-side-nav .cart {
   border: none;
   background: #663C2A;
   padding-bottom: 1rem;
+  transition: 0.2s ease-in-out;
   width: 260px;
+}
+.menu-section .menu-container .menu-content .menu-item .menu-list .card:hover {
+  transform: scale(0.9);
 }
 @media (min-width: 576px) {
   .menu-section .menu-container .menu-content .menu-item .menu-list .card {
@@ -12202,6 +12210,10 @@ header .navbar .right-side-nav .cart {
   width: 120px;
   text-align: center;
   text-decoration: none;
+  color: #663C2A;
+}
+.menu-section .see-all:hover {
+  color: #F9F871;
 }
 
 .reviews-section {

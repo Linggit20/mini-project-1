@@ -1,116 +1,10 @@
 @use '../custom' as *;
 
-// .menu-section{
-
-//     .container{
-//        position: relative;
-
-//        .menu-container{
-//             text-align: center;
-//             padding: 1rem 0 2.5rem;
-//             margin: 0 0 1rem;
-
-//             .menu-content{
-
-//                 @media screen and (max-width: 576px) {
-//                     width: 320px;
-//                     margin: 0 auto;
-//                     overflow: hidden;
-                
-//                 }
-
-//                 .menu-item{
-                    
-//                     .card{
-//                         border: none;
-
-//                         @include media-breakpoint-up(md) {
-//                             transition: all .2s ease-in-out; 
-
-//                             &:hover{
-//                                 transform: scale(1.1);
-//                             }
-//                         }
-
-//                         .image-container{
-//                             position: relative;
-
-//                             img{
-//                                 background-position: center;
-//                                 background-size: cover;
-
-//                                 @include media-breakpoint-up(xm) {
-//                                     height: 200px;
-//                                 }
-//                                 @include media-breakpoint-up(sm) {
-//                                     height: 160px;
-//                                 }
-//                                 @include media-breakpoint-up(xl) {
-//                                     height: 180px;
-//                                 }
-                                
-//                             }
-
-//                             span{
-//                                 position: absolute;
-//                                 top: .5rem;
-//                                 right: .5rem;
-//                                 background: $secondary;
-//                                 padding: 0 6px;
-//                                 border-radius: 4px;
-//                                 font-weight: 500;
-//                                 font-size: 1.125rem;
-//                             }
-//                         }
-
-//                         .card-body{
-//                             background: $primary;
-//                             color: $white;
-
-//                             .card-title{
-//                                 font-weight: 600;
-//                             }
-
-//                             .card-text{
-//                                 font-size: .875rem;
-//                             }
-//                         }
-//                     }
-//                 }
-
-//                 .swiper-pagination-bullet{
-//                     background: $white;
-//                     opacity: 1;
-
-//                     &.swiper-pagination-bullet-active{
-//                         background: $secondary;
-//                     }
-                
-//                 }
-//             }
-//        }
-
-//        .rounded-btn{
-//             text-decoration: none;
-//             display: block;
-//             margin: 0 auto;
-//             width: 160px;
-//             text-align: center;
-//        }
-//     }
-// }
-
 .menu-section{
 
     .container{
         position: relative;
-        h1{
 
-        }
-
-        p{
-
-        }
     }
 
     .menu-container{
@@ -130,6 +24,11 @@
                         border: none;
                         background: $primary;
                         padding-bottom: 1rem;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            transform: scale(.9);
+                        }
 
                         @include media-breakpoint-up(xs) {
                             width: 260px;
@@ -211,120 +110,6 @@
                         width: 160px;
                         padding: .5rem 1rem;
                     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    // @media screen and (max-width: 459px) {
-                    //     padding: 0 1.375rem;
-                    // }
-                    // .card{
-                    //     // border: none;
-                    //     // // transition: all .2s ease-in-out;
-                    //     // // height: 400px;
-        
-                    //     // // &:hover{
-                    //     // //     transform: scale(1.1);
-                    //     // // }
-        
-                    //     .image-container{
-                    //         position: relative;
-        
-                    //         img{
-                    //             background-position: center;
-                    //             background-size: cover;
-                                
-                    //             @include media-breakpoint-up(xs) {
-                    //                 height: 200px;
-                    //             }
-                    //             @include media-breakpoint-up(sm) {
-                    //                 height: 160px;
-                    //             }
-                    //             @include media-breakpoint-up(lg) {
-                    //                 height: 180px;
-                    //             }
-                    //         }
-        
-                    //         span{
-                    //             position: absolute;
-                    //             top: .5rem;
-                    //             right: .5rem;
-                    //             background: $secondary;
-                    //             padding: 0 6px;
-                    //             border-radius: 4px;
-                    //             font-weight: 500;
-                    //             font-size: 1.125rem;
-                    //         }
-                    //     }
-                    // }
-        
-                    // .card-body{
-                    //     background: $primary;
-                    //     color: $white;
-                    //     padding: 1rem .5rem;
-                    //     position: relative;
-
-                    //     .card-title{
-                    //         font-weight: 600;
-                    //     }
-        
-                    //     .card-text{
-                    //         font-size: .875rem;
-
-                    //     }
-
-                    //     .rounded-btn{
-                    //         position: absolute;
-                    //         bottom: 1rem;
-                    //         left: 50%;
-                    //         transform: translateX(-50%);
-                    //         font-weight: 400;
-                    //         padding: 6px 16px;
-                    //         text-align: center;
-                    //     }
-        
-                    // }
                 }
             }
 
@@ -345,6 +130,11 @@
         width: 120px;
         text-align: center;
         text-decoration: none;
+        color: $primary;
+        
+        &:hover {
+            color: $secondary;
+        }
 
     }
 }

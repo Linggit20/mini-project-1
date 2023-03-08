@@ -51,8 +51,13 @@
                     margin: 0 0 2.5rem 0;
                 }
     
-                .rounded-btn-outline{
+                .learn-more{
                     text-decoration: none;
+                    padding: .5rem 1rem;
+
+                    &:hover{
+                        color: $primary;
+                    }
                 }
             }
         }
