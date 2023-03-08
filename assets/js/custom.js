@@ -125,7 +125,7 @@ cartContainers.forEach(cartContainer => {
 // Menu swiper slide
 const swiper = new Swiper(".menu-content", {
     slidesPerView: 4,
-    spaceBetween: 25,
+    spaceBetween: 13,
     grabCursor: true,
     pagination: {
       el: ".swiper-pagination",
@@ -135,23 +135,23 @@ const swiper = new Swiper(".menu-content", {
     breakpoints: {
         320: {
           slidesPerView: 1,
-          spaceBetween: 35,
+        //   spaceBetween: 35,
         },
         460: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            // spaceBetween: 30,
         },
         768: {
             slidesPerView: 3,
-            spaceBetween: 30,
+            // spaceBetween: 30,
         },
         992: {
             slidesPerView: 3,
-            spaceBetween: 35,
+            // spaceBetween: 35,
         },
         1200: {
             slidesPerView: 4,
-            spaceBetween: 35,
+            // spaceBetween: 35,
         },
 
     },

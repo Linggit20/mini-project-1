@@ -11763,6 +11763,23 @@ textarea.form-control-lg {
   color: #663C2A;
 }
 
+.menu-btn {
+  padding: 0.5rem 0;
+  border: 1px solid #F9F871;
+  color: #663C2A;
+  background: #F9F871;
+  width: 140px;
+  display: block;
+  margin: auto;
+  border-radius: 1.5rem;
+  transition: 0.4s ease-in-out;
+  font-weight: 500;
+}
+.menu-btn:hover {
+  background: transparent;
+  color: #F9F871;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -11929,7 +11946,6 @@ header .navbar .right-side-nav .cart {
 }
 @media (max-width: 575.98px) {
   .hero-section .container .title h1.display-2 {
-    font-size: 2rem;
     letter-spacing: 2px;
   }
 }
@@ -11949,7 +11965,7 @@ header .navbar .right-side-nav .cart {
 @media (max-width: 575.98px) {
   .hero-section .container .title p {
     font-size: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 }
 .hero-section .container .rounded-btn-lg {
@@ -12065,68 +12081,93 @@ header .navbar .right-side-nav .cart {
   position: relative;
 }
 .menu-section .menu-container {
-  padding: 2rem 0 3rem;
+  padding: 1rem 0 2rem;
   margin: 1rem 0;
 }
-@media screen and (max-width: 459px) {
-  .menu-section .menu-container .menu-content .menu-item .menu-list {
-    padding: 0 1.375rem;
-  }
+.menu-section .menu-container .menu-content .menu-item .menu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu-section .menu-container .menu-content .menu-item .menu-list .card {
   border: none;
-  transition: all 0.2s ease-in-out;
-  height: 400px;
+  background: #663C2A;
+  padding-bottom: 1rem;
+  width: 240px;
 }
-.menu-section .menu-container .menu-content .menu-item .menu-list .card:hover {
-  transform: scale(1.1);
+@media (min-width: 576px) {
+  .menu-section .menu-container .menu-content .menu-item .menu-list .card {
+    width: 240px;
+  }
+}
+@media (min-width: 768px) {
+  .menu-section .menu-container .menu-content .menu-item .menu-list .card {
+    height: 360px;
+    width: 215px;
+  }
+}
+@media (min-width: 992px) {
+  .menu-section .menu-container .menu-content .menu-item .menu-list .card {
+    width: 280px;
+  }
 }
 .menu-section .menu-container .menu-content .menu-item .menu-list .card .image-container {
   position: relative;
 }
 .menu-section .menu-container .menu-content .menu-item .menu-list .card .image-container img {
-  background-position: center;
-  background-size: cover;
-  height: 200px;
+  height: 160px;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .menu-section .menu-container .menu-content .menu-item .menu-list .card .image-container img {
-    height: 160px;
+    height: 140px;
   }
 }
 @media (min-width: 992px) {
   .menu-section .menu-container .menu-content .menu-item .menu-list .card .image-container img {
-    height: 180px;
+    height: 160px;
   }
 }
-.menu-section .menu-container .menu-content .menu-item .menu-list .card .image-container span {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  background: #F9F871;
-  padding: 0 6px;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 1.125rem;
-}
-.menu-section .menu-container .menu-content .menu-item .menu-list .card-body {
-  background: #663C2A;
-  color: #fff;
-  padding: 1rem 0.5rem;
-  position: relative;
-}
-.menu-section .menu-container .menu-content .menu-item .menu-list .card-body .card-title {
-  font-weight: 600;
-}
-.menu-section .menu-container .menu-content .menu-item .menu-list .card-body .card-text {
+.menu-section .menu-container .menu-content .menu-item .menu-list .card .image-container .discount {
+  color: #663C2A;
   font-size: 0.875rem;
-}
-.menu-section .menu-container .menu-content .menu-item .menu-list .card-body .rounded-btn {
+  background: #F9F871;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.625rem 4px;
   position: absolute;
-  bottom: 1rem;
+  top: 0;
+  right: 0.75rem;
+  border-bottom-right-radius: 1rem;
+}
+.menu-section .menu-container .menu-content .menu-item .menu-list .card .image-container .price {
+  margin: 0;
+  padding: 0 0.5rem;
+  color: #F9F871;
+  position: absolute;
+  bottom: -0.625rem;
+  border-radius: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  background: #663C2A;
   left: 50%;
   transform: translateX(-50%);
-  font-weight: 400;
+}
+.menu-section .menu-container .menu-content .menu-item .menu-list .card .card-text-area {
+  color: #fff;
+  padding: 0.5rem;
+  height: 130px;
+}
+.menu-section .menu-container .menu-content .menu-item .menu-list .card .card-text-area .card-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0.625rem 0 0.5rem;
+}
+.menu-section .menu-container .menu-content .menu-item .menu-list .card .card-text-area .card-text {
+  font-size: 0.875rem;
+}
+.menu-section .menu-container .menu-content .menu-item .menu-list .rounded-btn {
+  width: 160px;
+  padding: 0.5rem 1rem;
 }
 .menu-section .menu-container .menu-content .swiper-pagination-bullet {
   background: #fff;
