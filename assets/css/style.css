@@ -11633,41 +11633,56 @@ textarea.form-control-lg {
 }
 .cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card {
   border: none;
+  background: #663C2A;
+  padding: 0 0 0.5rem 0;
 }
 .cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .image-container {
   position: relative;
 }
 .cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .image-container img {
-  background-position: center;
-  background-size: cover;
   height: 110px;
 }
-.cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .image-container span {
-  position: absolute;
-  top: 6px;
-  right: 6px;
+.cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .image-container .discount {
   color: #663C2A;
-  background: #F9F871;
-  font-weight: 500;
-  padding: 0 6px;
-}
-.cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .card-body {
-  background: #663C2A;
-  padding: 0.875rem 2px;
-  height: 120px;
-  position: relative;
-}
-.cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .card-body .card-title {
-  font-weight: 600;
-  color: #fff;
-  font-size: 1rem;
-}
-.cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .card-body .rounded-btn {
   font-size: 0.875rem;
+  background: #F9F871;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.625rem 4px;
   position: absolute;
-  bottom: 0.875rem;
+  top: 0;
+  right: 0.75rem;
+  border-bottom-right-radius: 1rem;
+}
+.cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .image-container .price {
+  margin: 0;
+  padding: 0 0.5rem;
+  color: #F9F871;
+  position: absolute;
+  bottom: -0.625rem;
+  border-radius: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  background: #663C2A;
+  left: 50%;
   transform: translateX(-50%);
-  font-weight: 400;
+}
+.cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .card-text-area {
+  color: #fff;
+  padding: 0.5rem;
+  height: 70px;
+}
+.cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .card-text-area .card-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0.625rem 0 0.5rem;
+}
+.cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .card .card-text-area .card-text {
+  font-size: 0.875rem;
+}
+.cart-manager-container .offcanvas .offcanvas-body .cart-container .cart-item .rounded-btn {
+  width: 160px;
+  padding: 0.5rem 1rem;
 }
 .cart-manager-container .offcanvas .offcanvas-body .cart-total {
   margin: 1rem 0;
@@ -11853,6 +11868,11 @@ header .navbar .right-side-nav .search-box {
   position: relative;
   transition: 0.4s;
   margin: 0 1rem 0 0;
+}
+@media (max-width: 991.98px) {
+  header .navbar .right-side-nav .search-box {
+    margin: 0 0.5rem 0 0;
+  }
 }
 header .navbar .right-side-nav .search-box.expand-search {
   width: 220px;

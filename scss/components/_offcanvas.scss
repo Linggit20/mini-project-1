@@ -32,48 +32,66 @@
 
                     .card{
                         border: none;
+                        background: $primary;
+                        padding: 0 0 .5rem 0;
 
                         .image-container{
                             position: relative;
 
                             img{
-                                background-position: center;
-                                background-size: cover;
-                                height: 110px;
+                               height: 110px;
                             }
 
-                            span{
-                                position: absolute;
-                                top: 6px;
-                                right: 6px;
+                            .discount{
                                 color: $primary;
+                                font-size: .875rem;
                                 background: $secondary;
-                                font-weight: 500;
-                                padding: 0 6px;
+                                font-size: 1rem;
+                                font-weight: 600;
+                                padding: .625rem 4px;
+                                position: absolute;
+                                top: 0;
+                                right: .75rem;
+                                border-bottom-right-radius: 1rem;
+                            }
 
+                            .price {
+                                margin: 0;
+                                padding: 0 .5rem;
+                                color: $secondary;
+                                position: absolute;
+                                bottom: -.625rem;
+                                border-radius: .75rem;
+                                font-size: 1.125rem;
+                                font-weight: 500;
+                                background: $primary;
+                                left: 50%;
+                                transform: translateX(-50%);
                             }
                         }
 
-                        .card-body{
-                            background: $primary;
-                            padding: .875rem 2px;
-                            height: 120px;
-                            position: relative;
+                        .card-text-area{
+                            color: $white;
+                            padding: .5rem;
+                            height: 70px;
 
                             .card-title{
-                                font-weight: 600;
-                                color: $white;
-                                font-size: 1rem;
+                                font-size: 18px;
+                                font-weight: 500;
+                                margin: .625rem 0 .5rem;
+
                             }
 
-                            .rounded-btn{
+                            .card-text{
                                 font-size: .875rem;
-                                position: absolute;
-                                bottom: .875rem;
-                                transform: translateX(-50%);
-                                font-weight: 400;
+
                             }
+
                         }
+                    }
+                    .rounded-btn{
+                        width: 160px;
+                        padding: .5rem 1rem;
                     }
                 }
             }

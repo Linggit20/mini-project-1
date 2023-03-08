@@ -86,6 +86,10 @@ header{
                 transition: .4s;
                 margin: 0 1rem 0 0;
 
+                @include media-breakpoint-down(lg) {
+                    margin: 0 .5rem 0 0;
+                }
+
                 &.expand-search{
                     width: 220px;
 
