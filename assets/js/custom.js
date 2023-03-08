@@ -137,7 +137,7 @@ const swiper = new Swiper(".menu-content", {
           slidesPerView: 1,
         //   spaceBetween: 35,
         },
-        460: {
+        520: {
             slidesPerView: 2,
             // spaceBetween: 30,
         },
