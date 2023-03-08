@@ -12262,6 +12262,14 @@ header .navbar .right-side-nav .cart {
 }
 footer {
   background: rgba(51, 51, 51, 0.6431372549);
+  padding: 1rem 0 0.5rem;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 0.5rem 0 0;
+  border-top: 1px solid #495057;
 }
 footer .footer-section .footer-content .footer-link .footer-brand {
   color: #fff;
@@ -12271,6 +12279,15 @@ footer .footer-section .footer-content .footer-link .footer-brand {
 }
 footer .footer-section .footer-content .footer-link .footer-brand span {
   color: #F9F871;
+}
+footer .footer-section .footer-content .footer-link .contact {
+  color: #fff;
+}
+footer .footer-section .footer-content .footer-link .contact i {
+  margin-left: 0.625rem;
+}
+footer .footer-section .footer-content .footer-link .contact span {
+  font-size: 0.875rem;
 }
 footer .footer-section .footer-content .site-link .footer-nav {
   padding: 0;
@@ -12424,6 +12441,78 @@ footer .footer-section .footer-content .other-link ul li a:hover {
 }
 .form .container form p {
   font-size: 0.875rem;
+}
+
+main .about-page {
+  padding: 12rem 1rem;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/about/about-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+main .about-page .about-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .about-page .about-hero h1 {
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+}
+main .story-section .about-container {
+  padding: 3rem 0;
+}
+main .story-section .about-container .img-container {
+  margin: 0 0 1rem 0;
+}
+main .story-section .about-container .img-container img {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+@media (max-width: 991.98px) {
+  main .story-section .about-container .img-container img {
+    width: 100%;
+  }
+}
+main .story-section .about-container .about-text {
+  color: #fff;
+}
+main .story-section .about-container .about-text p {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin: 0 0 2.5rem 0;
+}
+main .mission {
+  background: rgba(0, 0, 0, 0.1);
+}
+main .mission .container {
+  padding: 3rem 0;
+}
+main .mission .container .mission-content .mission-text {
+  color: #fff;
+}
+main .mission .container .mission-content .mission-text h1 {
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem 0;
+}
+main .mission .container .mission-content .mission-image img {
+  width: 100%;
+}
+main .vission .container {
+  padding: 3rem 0;
+}
+main .vission .container .vission-content .vission-text {
+  color: #fff;
+}
+main .vission .container .vission-content .vission-text h1 {
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem 0;
+}
+main .vission .container .vission-content .vission-image img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

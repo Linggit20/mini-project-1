@@ -26,22 +26,16 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">About</a>
+                        <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Menu</a>
+                        <a class="nav-link" href="#">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Reviews</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Faq</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Contact Us</a>
+                        <a class="nav-link" href="#">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link sign-up" href="./pages/signup.html">Sign Up</a>
@@ -100,19 +94,13 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item show">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item show">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="./pages/about.html">About</a>
                         </li>
                         <li class="nav-item show">
                             <a class="nav-link" href="#menu">Menu</a>
-                        </li>
-                        <li class="nav-item show">
-                            <a class="nav-link" href="#reviews">Reviews</a>
-                        </li>
-                        <li class="nav-item show">
-                            <a class="nav-link" href="#faq">Faq</a>
                         </li>
                         <li class="nav-item show">
                             <a class="nav-link" href="#">Contact Us</a>
@@ -150,9 +138,9 @@
                 <a href="" class="rounded-btn-lg">Our Menu</a>
             </div>
             <div class="social">
-                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                <a class="disabled" href="#" tabindex="-1" aria-disabled="true" href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a class="disabled" href="#" tabindex="-1" aria-disabled="true" href=""><i class="fa-brands fa-instagram"></i></a>
+                <a class="disabled" href="#" tabindex="-1" aria-disabled="true" href=""><i class="fa-brands fa-square-twitter"></i></a>
             </div>  
         </section>
         <!-- Guid Section -->
@@ -229,7 +217,7 @@
                             Our team of expert chefs use only the freshest ingredients to create delicious, mouth-watering dishes that are sure to delight your taste buds.
                             Whether you're dining in or ordering online, our goal is to exceed your expectations and make every visit to our restaurant a memorable one.
                         </p>
-                        <a class="rounded-btn-outline learn-more" href="">Learn More &#8594</a>
+                        <a class="rounded-btn-outline learn-more" href="./pages/about.html">Learn More &#8594</a>
                     </div>
                 </div>
             </div>
@@ -498,11 +486,19 @@
     <footer>
         <div class="container footer-section py-3">
             <div class="row footer-content">
-                <div class="col-lg-4 mb-3 footer-link">
+                <div class="col-lg-4 mb-4 footer-link">
                     <a class="footer-brand" href="#">
                         <span><i class="fa-solid fa-utensils"></i></span>
                         FoodTrip
                     </a>
+                    <div class="contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+63123456789</span>
+                    </div>
+                    <div class="contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>foodtrip@gmail.com</span>
+                    </div>
                 </div>
                 <div class="col mb-3 text-white site-link">
                     <h5>Site Link</h5>
@@ -517,12 +513,6 @@
                             <a class="footer-nav-link" href="#menu">Menu</a>
                         </li>
                         <li class="footer-nav-item">
-                            <a class="footer-nav-link" href="#">Reviews</a>
-                        </li>
-                        <li class="footer-nav-item">
-                            <a class="footer-nav-link" href="#">Faq</a>
-                        </li>
-                        <li class="footer-nav-item">
                             <a class="footer-nav-link" href="#">Contact Us</a>
                         </li>
                     </ul>
@@ -530,20 +520,21 @@
                 <div class="col mb03 social-link text-white">
                     <h5>Social Link</h5>
                     <ul>
-                        <li><a class="disabled" href="">Facebook</a></li>
-                        <li><a class="disabled" href="">Twitter</a></li>
-                        <li><a class="disabled" href="">Instagram</a></li>
+                        <li><a class="disabled" href="#" tabindex="-1" aria-disabled="true" href="">Facebook</a></li>
+                        <li><a class="disabled" href="#" tabindex="-1" aria-disabled="true" href="">Twitter</a></li>
+                        <li><a class="disabled" href="#" tabindex="-1" aria-disabled="true" href="">Instagram</a></li>
                     </ul>
                 </div>
                 <div class="col-md mb-3 other-link text-white">
                     <h5>Other Link</h5>
                     <ul>
                         <li><a class="disabled" href="#" tabindex="-1" aria-disabled="true">Blogs</a></li>
-                        <li><a a class="disabled" href="#" tabindex="-1" aria-disabled="true">Gallery</a></li>
+                        <li><a class="disabled" href="#" tabindex="-1" aria-disabled="true">Gallery</a></li>
                     </ul>
                 </div>
             </div>
         </div>
+        <p class="text-white">Alberto Deniros &copy 2023 - All Rights Reserved</i></p>
     </footer>
 
     <!-- Bootstrap Js -->

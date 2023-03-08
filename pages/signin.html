@@ -32,19 +32,13 @@
                         <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Menu</a>
+                        <a class="nav-link" href="#">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#reviews">Reviews</a>
+                        <a class="nav-link" href="#">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Faq</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link sign-up" href="./signup.html">Sign Up</a>
+                        <a class="nav-link sign-up" href="./pages/signup.html">Sign Up</a>
                     </li>
                 </ul>
             </div>
@@ -53,25 +47,28 @@
     <div class="cart-manager-container">
         <div class="offcanvas offcanvas-end" tabindex="-1" id="cartManager" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">
             <div class="offcanvas-header">
-              <h5 id="offcanvasRightLabel">Manage your cart here</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <h5 id="offcanvasRightLabel">Manage your cart here</h5>
+                <button type="button" class="btn-close-canvas" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
             </div>
             <div class="offcanvas-body">
-              <div class="row cart-container">
+                <div class="row cart-container">
                 <!-- <div class="col-6 cart-item">
                     <div class="card">
                         <div class="image-container">
                             <img src="./images/menu/menu-1.jpg" class="card-img-top" alt="...">
-                            <span class="price">$99</span>
+                            <span class="discount"><i>-10%</i></span>
+                            <p class="price">$50</p>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <button class="rounded-btn" type="button">Romove</button>
+                        <div class="card-text-area">
+                            <h5 class="card-title">Strawberry Pancake</h5>
                         </div>
+                        <button class="menu-btn remove-cart" type="button">Remove</button>
                     </div>
                 </div> -->
-              </div>             
-              <div class="cart-total text-white">
+                </div>             
+                <div class="cart-total text-white">
                     <div class="total-price">
                         <h5>Total Price: 
                             <span id="totalPrice"></span>
@@ -79,9 +76,9 @@
                     </div>
                    <button class="rounded-btn">Check Out</button>
                 </div>
-              </div>
             </div>
-          </div>
+            </div>
+        </div>
     </div>
     <!-- Header -->
     <header>
@@ -104,12 +101,6 @@
                         </li>
                         <li class="nav-item show">
                             <a class="nav-link" href="#menu">Menu</a>
-                        </li>
-                        <li class="nav-item show">
-                            <a class="nav-link" href="#reviews">Reviews</a>
-                        </li>
-                        <li class="nav-item show">
-                            <a class="nav-link" href="#faq">Faq</a>
                         </li>
                         <li class="nav-item show">
                             <a class="nav-link" href="#">Contact Us</a>
@@ -157,11 +148,19 @@
     <footer>
         <div class="container footer-section py-3">
             <div class="row footer-content">
-                <div class="col-lg-4 mb-3 footer-link">
+                <div class="col-lg-4 mb-4 footer-link">
                     <a class="footer-brand" href="../index.html">
                         <span><i class="fa-solid fa-utensils"></i></span>
                         FoodTrip
                     </a>
+                    <div class="contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+63123456789</span>
+                    </div>
+                    <div class="contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>foodtrip@gmail.com</span>
+                    </div>
                 </div>
                 <div class="col mb-3 text-white site-link">
                     <h5>Site Link</h5>
@@ -176,12 +175,6 @@
                             <a class="footer-nav-link" href="#menu">Menu</a>
                         </li>
                         <li class="footer-nav-item">
-                            <a class="footer-nav-link" href="#">Reviews</a>
-                        </li>
-                        <li class="footer-nav-item">
-                            <a class="footer-nav-link" href="#">Faq</a>
-                        </li>
-                        <li class="footer-nav-item">
                             <a class="footer-nav-link" href="#">Contact Us</a>
                         </li>
                     </ul>
@@ -189,20 +182,21 @@
                 <div class="col mb03 social-link text-white">
                     <h5>Social Link</h5>
                     <ul>
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Twitter</a></li>
-                        <li><a href="">Instagram</a></li>
+                        <li><a class="disabled" href="#" tabindex="-1" aria-disabled="true" href="">Facebook</a></li>
+                        <li><a class="disabled" href="#" tabindex="-1" aria-disabled="true" href="">Twitter</a></li>
+                        <li><a class="disabled" href="#" tabindex="-1" aria-disabled="true" href="">Instagram</a></li>
                     </ul>
                 </div>
                 <div class="col-md mb-3 other-link text-white">
                     <h5>Other Link</h5>
                     <ul>
-                        <li><a href="">Blogs</a></li>
-                        <li><a href="">Gallery</a></li>
+                        <li><a class="disabled" href="#" tabindex="-1" aria-disabled="true">Blogs</a></li>
+                        <li><a class="disabled" href="#" tabindex="-1" aria-disabled="true">Gallery</a></li>
                     </ul>
                 </div>
             </div>
         </div>
+        <p class="text-white">Alberto Deniros &copy 2023 - All Rights Reserved</i></p>
     </footer>
 
 

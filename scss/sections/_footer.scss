@@ -2,13 +2,22 @@
 
 footer{
     background: #333333a4;
+    padding: 1rem 0 .5rem;
+
+    p{
+        margin: 0;
+        text-align: center;
+        font-size: .75rem;
+        padding: .5rem 0 0;
+        border-top: 1px solid $gray-700;
+    }
 
     .footer-section{
     
         .footer-content{
     
             .footer-link{
-    
+                
                 .footer-brand{
                     color: $white;
                     font-weight: 700;
@@ -18,6 +27,18 @@ footer{
                     span{
                         color: $secondary;
                     }
+                }
+                .contact{
+                    color: $white;
+
+                    i{
+                        margin-left: .625rem;
+                    }
+
+                    span{
+                        font-size: .875rem;
+                    }
+
                 }
             }
             

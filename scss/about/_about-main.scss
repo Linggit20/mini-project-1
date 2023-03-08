@@ -1,0 +1,110 @@
+@use '../custom' as *;
+
+main{
+
+    .about-page{
+        padding: 12rem 1rem;
+        background-image: linear-gradient(to right, rgba($black, 35%),rgba($black, 35%)), url(../../images/about/about-bg.jpg);
+        background-size: cover;
+        background-position: center;
+    
+        .about-hero{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            h1{
+                font-weight: 700;
+                letter-spacing: 2px;
+                color: $white;
+            }
+        }
+    
+    }
+    
+    .story-section{
+    
+        .about-container{
+            padding: 3rem 0;
+
+            .img-container{
+                margin: 0 0 1rem 0;
+            
+                img{
+                    width: 90%;
+                    display: block;
+                    margin: auto;
+    
+                    @include media-breakpoint-down(lg){
+                       width: 100%;
+                    }
+                }
+            }
+    
+            .about-text{
+                color: $white;
+    
+                p{
+                    font-size: 1rem;
+                    line-height: 1.75rem;
+                    margin: 0 0 2.5rem 0;
+                }
+            }
+        }
+    }
+    
+    .mission{
+        background: rgba($black, 10%);
+
+        .container{
+            padding: 3rem 0;
+
+            .mission-content{
+    
+                .mission-text{
+                    color: $white;
+                    
+                    h1{
+                        font-weight: 600;
+                        text-align: center;
+                        margin: 1rem 0;
+                    }
+                }
+        
+                .mission-image{
+                    
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .vission{
+
+        .container{
+            padding: 3rem 0;
+            
+            .vission-content{
+    
+                .vission-text{
+                    color: $white;
+                    
+                    h1{
+                        font-weight: 600;
+                        text-align: center;
+                        margin: 1rem 0;
+                    }
+                }
+        
+                .vission-image{
+                    
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
