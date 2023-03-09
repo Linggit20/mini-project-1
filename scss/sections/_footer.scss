@@ -28,17 +28,16 @@ footer{
                         color: $secondary;
                     }
                 }
-                .contact{
-                    color: $white;
-
-                    i{
-                        margin-left: .625rem;
+                .open-hours{
+                    margin-top: .75rem;
+                    h5{
+                        color: $white;
+                        margin: .5rem 0;
+    
+                        &.time{
+                            font-size: 1rem;
+                        }
                     }
-
-                    span{
-                        font-size: .875rem;
-                    }
-
                 }
             }
             
