@@ -1,0 +1,22 @@
+@use '../custom' as *;
+
+.menu-page{
+
+    .menu-hero{
+        background-image: linear-gradient(to right, rgba($black, 35%),rgba($black, 35%)), url(../../images/menu/menu-hero-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 13rem 0;
+
+        .menu-container{
+            color: $white;
+            text-align: center;
+
+            h1{
+                font-weight: 600;
+            }
+           
+        }
+
+    }
+}

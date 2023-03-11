@@ -12560,4 +12560,18 @@ footer .footer-section .footer-content .other-link ul li a:hover {
   text-decoration: none;
 }
 
+.menu-page .menu-hero {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/menu/menu-hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 13rem 0;
+}
+.menu-page .menu-hero .menu-container {
+  color: #fff;
+  text-align: center;
+}
+.menu-page .menu-hero .menu-container h1 {
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=style.css.map */

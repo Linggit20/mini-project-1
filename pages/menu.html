@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FoodTrip</title>
+    <link rel="icon" href="../images/title-icon.png">
+    <!-- Css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <!-- Google FOnt Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-dark">
+    <!-- Offcanvas code Here -->
+    <div class="left-side-nav">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="leftSideNav" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasLabel">Navigation</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sign-up" href="./pages/signup.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+    </div>
+    <div class="cart-manager-container">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="cartManager" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Manage your cart here</h5>
+              <button type="button" class="btn-close-canvas" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="row cart-container">
+                <!-- <div class="col-6 cart-item">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="./images/menu/menu-1.jpg" class="card-img-top" alt="...">
+                            <span class="discount"><i>-10%</i></span>
+                            <p class="price">$50</p>
+                        </div>
+                        <div class="card-text-area">
+                            <h5 class="card-title">Strawberry Pancake</h5>
+                        </div>
+                        <button class="menu-btn remove-cart" type="button">Remove</button>
+                    </div>
+                </div> -->
+              </div>             
+              <div class="cart-total text-white">
+                    <div class="total-price">
+                        <h5>Total Price: 
+                            <span id="totalPrice"></span>
+                        </h5>
+                    </div>
+                   <button class="rounded-btn">Check Out</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container d-flex">
+                <a class="navbar-brand" href="index.html">
+                    <span><i class="fa-solid fa-utensils"></i></span>
+                    FoodTrip
+                </a>
+                <button class="navbar-toggler" type="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#leftSideNav" aria-controls="offcanvasWithBothOptions">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item show">
+                            <a class="nav-link" aria-current="page" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item show">
+                            <a class="nav-link" href="./pages/about.html">About</a>
+                        </li>
+                        <li class="nav-item show">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item show">
+                            <a class="nav-link" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item show">
+                            <a class="nav-link" href="#faq">Faq</a>
+                        </li>
+                        <li class="nav-item show">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-side-nav">
+                    <form action="" class="search-box" id="searchBar">
+                        <input type="search" class="search-input" placeholder="Search....">
+                        <div class="search-btn" id="searchBtn">
+                          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </div>
+                    </form>
+                    <a href="./pages/signup.html" class="rounded-btn">Sign Up</a>
+                    <button class="cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartManager" aria-controls="staticBackdrop">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main  -->
+    <main class="menu-page">
+       <section class="menu-hero">
+        <div class="container menu-container">
+            <h1>Discover Our World of Flavor</h1>
+            <h5>Delectable Dishes Await You on Our Menu</h5>
+        </div>
+       </section>
+        <!-- Best Seller Section -->
+        <section class="menu-section">
+            <div class="container py-4">
+                <h1 class="text-white mb-3">Best Seller</h1>
+                <div class="row menu-container swiper">
+                    <div class="menu-content text-center">
+                        <div class="menu-item swiper-wrapper">
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-1.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Strawberry Pancake</h5>
+                                        <p class="card-text"> Fluffy stacks of goodness, topped with juicy slices of fresh strawberries</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>                           
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-2.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Grilled Barbecue</h5>
+                                        <p class="card-text">Juicy grilled BBQ meat with caramelized char marks. A savory and satisfying meal</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-3.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Beef Steak</h5>
+                                        <p class="card-text">Juicy beef with parsley and thyme herbs cooked to perfection for a flavorful dish</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-4.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Grilled Meat</h5>
+                                        <p class="card-text">Enjoy a delectable meal with our grilled meat and fresh green ladies finger vegetables</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-5.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Vegetable Noodles</h5>
+                                        <p class="card-text">Vegetable Noodle Bowl with Greens and Carrots in a Savory Broth</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-6.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Fried shrimp & squid</h5>
+                                        <p class="card-text">Crispy deep-fried shrimp and squid served with lemon slices on a ceramic plate</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-7.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Fried Spring Rolls</h5>
+                                        <p class="card-text">Crispy fried spring rolls stuffed with vegetables and served with a savory dipping sauce</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-8.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Pasta Dish</h5>
+                                        <p class="card-text">Creamy penne pasta with sun-dried tomatoes, basil, and Parmesan cheese</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Monthly Discount Offer -->
+        <section class="menu-section">
+            <div class="container py-4">
+                <h1 class="text-white mb-3">Monthly Discount Offer</h1>
+                <div class="row menu-container swiper">
+                    <div class="menu-content text-center">
+                        <div class="menu-item swiper-wrapper">
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-1.jpg" class="card-img-top" alt="...">
+                                        <span class="discount"><i>-10%</i></span>
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Strawberry Pancake</h5>
+                                        <p class="card-text"> Fluffy stacks of goodness, topped with juicy slices of fresh strawberries</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>                           
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-2.jpg" class="card-img-top" alt="...">
+                                        <span class="discount"><i>-10%</i></span>
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Grilled Barbecue</h5>
+                                        <p class="card-text">Juicy grilled BBQ meat with caramelized char marks. A savory and satisfying meal</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-3.jpg" class="card-img-top" alt="...">
+                                        <span class="discount"><i>-10%</i></span>
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Beef Steak</h5>
+                                        <p class="card-text">Juicy beef with parsley and thyme herbs cooked to perfection for a flavorful dish</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-4.jpg" class="card-img-top" alt="...">
+                                        <span class="discount"><i>-10%</i></span>
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Grilled Meat</h5>
+                                        <p class="card-text">Enjoy a delectable meal with our grilled meat and fresh green ladies finger vegetables</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-5.jpg" class="card-img-top" alt="...">
+                                        <span class="discount"><i>-10%</i></span>
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Vegetable Noodles</h5>
+                                        <p class="card-text">Vegetable Noodle Bowl with Greens and Carrots in a Savory Broth</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-6.jpg" class="card-img-top" alt="...">
+                                        <span class="discount"><i>-10%</i></span>
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Fried shrimp & squid</h5>
+                                        <p class="card-text">Crispy deep-fried shrimp and squid served with lemon slices on a ceramic plate</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-7.jpg" class="card-img-top" alt="...">
+                                        <span class="discount"><i>-10%</i></span>
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Fried Spring Rolls</h5>
+                                        <p class="card-text">Crispy fried spring rolls stuffed with vegetables and served with a savory dipping sauce</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-8.jpg" class="card-img-top" alt="...">
+                                        <span class="discount"><i>-10%</i></span>
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Pasta Dish</h5>
+                                        <p class="card-text">Creamy penne pasta with sun-dried tomatoes, basil, and Parmesan cheese</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Breakfast Section -->
+        <section class="menu-section">
+            <div class="container py-4">
+                <h1 class="text-white mb-3">Breakfast</h1>
+                <div class="row menu-container swiper">
+                    <div class="menu-content text-center">
+                        <div class="menu-item swiper-wrapper">
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-1.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Strawberry Pancake</h5>
+                                        <p class="card-text"> Fluffy stacks of goodness, topped with juicy slices of fresh strawberries</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>                           
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-2.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Grilled Barbecue</h5>
+                                        <p class="card-text">Juicy grilled BBQ meat with caramelized char marks. A savory and satisfying meal</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-3.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Beef Steak</h5>
+                                        <p class="card-text">Juicy beef with parsley and thyme herbs cooked to perfection for a flavorful dish</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-4.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Grilled Meat</h5>
+                                        <p class="card-text">Enjoy a delectable meal with our grilled meat and fresh green ladies finger vegetables</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-5.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Vegetable Noodles</h5>
+                                        <p class="card-text">Vegetable Noodle Bowl with Greens and Carrots in a Savory Broth</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-6.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Fried shrimp & squid</h5>
+                                        <p class="card-text">Crispy deep-fried shrimp and squid served with lemon slices on a ceramic plate</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-7.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Fried Spring Rolls</h5>
+                                        <p class="card-text">Crispy fried spring rolls stuffed with vegetables and served with a savory dipping sauce</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-8.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Pasta Dish</h5>
+                                        <p class="card-text">Creamy penne pasta with sun-dried tomatoes, basil, and Parmesan cheese</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Lunch -->
+        <section class="menu-section">
+            <div class="container py-4">
+                <h1 class="text-white mb-3">Lunch</h1>
+                <div class="row menu-container swiper">
+                    <div class="menu-content text-center">
+                        <div class="menu-item swiper-wrapper">
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-1.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Strawberry Pancake</h5>
+                                        <p class="card-text"> Fluffy stacks of goodness, topped with juicy slices of fresh strawberries</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>                           
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-2.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Grilled Barbecue</h5>
+                                        <p class="card-text">Juicy grilled BBQ meat with caramelized char marks. A savory and satisfying meal</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-3.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Beef Steak</h5>
+                                        <p class="card-text">Juicy beef with parsley and thyme herbs cooked to perfection for a flavorful dish</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-4.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Grilled Meat</h5>
+                                        <p class="card-text">Enjoy a delectable meal with our grilled meat and fresh green ladies finger vegetables</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-5.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Vegetable Noodles</h5>
+                                        <p class="card-text">Vegetable Noodle Bowl with Greens and Carrots in a Savory Broth</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-6.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Fried shrimp & squid</h5>
+                                        <p class="card-text">Crispy deep-fried shrimp and squid served with lemon slices on a ceramic plate</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-7.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Fried Spring Rolls</h5>
+                                        <p class="card-text">Crispy fried spring rolls stuffed with vegetables and served with a savory dipping sauce</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-8.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Pasta Dish</h5>
+                                        <p class="card-text">Creamy penne pasta with sun-dried tomatoes, basil, and Parmesan cheese</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Dinner -->
+        <section class="menu-section">
+            <div class="container py-4">
+                <h1 class="text-white mb-3">Dinner</h1>
+                <div class="row menu-container swiper">
+                    <div class="menu-content text-center">
+                        <div class="menu-item swiper-wrapper">
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-1.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Strawberry Pancake</h5>
+                                        <p class="card-text"> Fluffy stacks of goodness, topped with juicy slices of fresh strawberries</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>                           
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-2.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Grilled Barbecue</h5>
+                                        <p class="card-text">Juicy grilled BBQ meat with caramelized char marks. A savory and satisfying meal</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-3.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Beef Steak</h5>
+                                        <p class="card-text">Juicy beef with parsley and thyme herbs cooked to perfection for a flavorful dish</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-4.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Grilled Meat</h5>
+                                        <p class="card-text">Enjoy a delectable meal with our grilled meat and fresh green ladies finger vegetables</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-5.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Vegetable Noodles</h5>
+                                        <p class="card-text">Vegetable Noodle Bowl with Greens and Carrots in a Savory Broth</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-6.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Fried shrimp & squid</h5>
+                                        <p class="card-text">Crispy deep-fried shrimp and squid served with lemon slices on a ceramic plate</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-7.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Fried Spring Rolls</h5>
+                                        <p class="card-text">Crispy fried spring rolls stuffed with vegetables and served with a savory dipping sauce</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="col-3 menu-list swiper-slide">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img src="../images/menu/menu-8.jpg" class="card-img-top" alt="...">
+                                        <p class="price">$50</p>
+                                    </div>
+                                    <div class="card-text-area">
+                                        <h5 class="card-title">Pasta Dish</h5>
+                                        <p class="card-text">Creamy penne pasta with sun-dried tomatoes, basil, and Parmesan cheese</p>
+                                    </div>
+                                    <button class="menu-btn add-cart" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-section py-3">
+            <div class="row footer-content">
+                <div class="col-lg-4 mb-4 footer-link">
+                    <a class="footer-brand" href="#hero">
+                        <span><i class="fa-solid fa-utensils"></i></span>
+                        FoodTrip
+                    </a>
+                    <div class="open-hours">
+                        <h5>Open Hours</h5>
+                        <h5 class="time">8:00am - 7:00pm</h5>
+                    </div>
+                </div>
+                <div class="col mb-3 text-white site-link">
+                    <h5>Site Link</h5>
+                    <ul class="footer-nav">
+                        <li class="footer-nav-item">
+                            <a class="footer-nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a class="footer-nav-link" href="#about">About</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a class="footer-nav-link" href="#menu">Menu</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a class="footer-nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col mb-3 social-link text-white">
+                    <h5>Social Link</h5>
+                    <ul>
+                        <li><a class="disabled" href="#" tabindex="-1" aria-disabled="true" href="">Facebook</a></li>
+                        <li><a class="disabled" href="#" tabindex="-1" aria-disabled="true" href="">Twitter</a></li>
+                        <li><a class="disabled" href="#" tabindex="-1" aria-disabled="true" href="">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md mb-3 other-link text-white">
+                    <h5>Other Link</h5>
+                    <ul>
+                        <li><a class="disabled" href="#" tabindex="-1" aria-disabled="true">Blogs</a></li>
+                        <li><a class="disabled" href="#" tabindex="-1" aria-disabled="true">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="text-white">Alberto Deniros &copy 2023 - All Rights Reserved</i></p>
+    </footer>
+
+    <!-- Bootstrap Js -->
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <!-- Swiper Js -->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <!-- Custom Js -->
+    <script src="../assets/js/custom.js"></script>
+</body>
+</html>
