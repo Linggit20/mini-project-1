@@ -12573,5 +12573,8 @@ footer .footer-section .footer-content .other-link ul li a:hover {
 .menu-page .menu-hero .menu-container h1 {
   font-weight: 600;
 }
+.menu-page .discount, .menu-page .lunch {
+  background: rgba(0, 0, 0, 0.1);
+}
 
 /*# sourceMappingURL=style.css.map */
