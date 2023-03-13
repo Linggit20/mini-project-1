@@ -1,0 +1,95 @@
+@use '../custom' as *;
+
+.contact-page{
+    
+    .contact-hero{
+        padding: 10rem 1rem 5rem;
+        background-image: linear-gradient(to right, rgba($black, 40%),rgba($black, 40%)), url(../../images/contact/contact-bg.jpg);
+        background-size: cover;
+        background-position: 10%  40%;
+        h2{
+            font-weight: 600;
+
+        }
+    }
+
+    .contact-section{
+
+        .contact-container{
+            p{
+                font-size: 1.125rem;
+                margin: 0 0 2rem;
+                color: $white;
+    
+                @include media-breakpoint-down(md) {
+                    font-size: 1rem;
+                }
+            }
+
+            .info-wrapper{
+
+                .info{
+                    margin: 1rem 0;
+                    i{
+                        font-size: 1.125rem;
+                        color: $secondary;
+                        margin: 0 1rem 0 0;
+                    }
+
+                    span{
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .user-input-wrapper{
+                
+                form{
+
+                    .form-floating{
+
+                        input{
+                            border: none;
+                            background: $gray-800;
+                            color: $white;
+
+
+                            &:focus{
+                               box-shadow: none;
+                               border: 1px solid $secondary;
+                            }
+        
+                        }
+
+                    }
+
+                    .form-floating > label{
+                        color: $white;
+                        font-weight: 500;
+                    }
+
+                    .text-area{
+                        max-height: 220px;
+                        min-height: 220px;
+                        border: none;
+                        background: $gray-800;
+                        color: $white;
+
+                            &:focus{
+                                box-shadow: none;
+                                border: 1px solid $secondary;
+                             }
+         
+                    }
+                    button{
+                        width: 180px;
+                        height: 2.875rem;
+                        display: block;
+                        margin: auto;
+                    }
+                }
+
+            }
+        }
+    }
+}
