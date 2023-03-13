@@ -11951,6 +11951,10 @@ header .navbar .right-side-nav .cart {
   font-size: 2.5rem;
   color: #fff;
   margin: 0 1.5rem;
+  transition: 0.3s ease-in-out;
+}
+.hero-section .social a i:hover {
+  color: #F9F871;
 }
 .hero-section .container {
   padding: 1rem 0;
