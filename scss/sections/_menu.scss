@@ -8,7 +8,7 @@
     }
 
     .menu-container{
-        padding: 1rem 0 2rem;
+        padding: 1rem 0 3rem;
         margin: 1rem 0;
         
         .menu-content{
@@ -27,7 +27,7 @@
                         transition: .2s ease-in-out;
 
                         &:hover {
-                            transform: scale(.9);
+                            transform: scale(1.1);
                         }
 
                         @include media-breakpoint-up(xs) {

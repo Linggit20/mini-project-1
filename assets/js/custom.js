@@ -139,15 +139,15 @@ const swiper = new Swiper(".menu-content", {
         },
         520: {
             slidesPerView: 2,
-            // spaceBetween: 30,
+            spaceBetween: 35,
         },
         768: {
             slidesPerView: 3,
-            // spaceBetween: 30,
+            spaceBetween: 35,
         },
         992: {
             slidesPerView: 3,
-            // spaceBetween: 35,
+            spaceBetween: 40,
         },
         1200: {
             slidesPerView: 4,

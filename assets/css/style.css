@@ -12006,23 +12006,23 @@ header .navbar .right-side-nav .cart {
   margin: 0 0 4rem 0;
   font-weight: 600;
 }
-.guide-section .container .guid-container .guid-list {
+.guide-section .container .guide-container .guide-list {
   margin: 0 0 2.5rem 0;
 }
-.guide-section .container .guid-container .guid-list .card {
+.guide-section .container .guide-container .guide-list .card {
   border: 1px solid #fff;
   padding: 1rem;
 }
-.guide-section .container .guid-container .guid-list .card .img-container {
+.guide-section .container .guide-container .guide-list .card .img-container {
   position: relative;
 }
-.guide-section .container .guid-container .guid-list .card .img-container img {
+.guide-section .container .guide-container .guide-list .card .img-container img {
   display: block;
   width: 150px;
   height: 100px;
   margin: 0 auto;
 }
-.guide-section .container .guid-container .guid-list .card .img-container span {
+.guide-section .container .guide-container .guide-list .card .img-container span {
   color: #663C2A;
   font-weight: 700;
   background: #F9F871;
@@ -12034,19 +12034,19 @@ header .navbar .right-side-nav .cart {
   padding: 0.75rem 1.375rem;
   border-radius: 100%;
 }
-.guide-section .container .guid-container .guid-list .card .img-container span.off-shape {
+.guide-section .container .guide-container .guide-list .card .img-container span.off-shape {
   padding: 0.75rem 1.5rem;
 }
-.guide-section .container .guid-container .guid-list .card .card-body {
+.guide-section .container .guide-container .guide-list .card .card-body {
   text-align: center;
 }
-.guide-section .container .guid-container .guid-list .card .card-body .card-text {
+.guide-section .container .guide-container .guide-list .card .card-body .card-text {
   color: #fff;
 }
-.guide-section .container .guid-container .guid-list .card .card-body .card-text h5 {
+.guide-section .container .guide-container .guide-list .card .card-body .card-text h5 {
   font-weight: 600;
 }
-.guide-section .container .guid-container .guid-list .card .card-body .card-text p {
+.guide-section .container .guide-container .guide-list .card .card-body .card-text p {
   font-size: 0.875rem;
 }
 
@@ -12109,7 +12109,7 @@ header .navbar .right-side-nav .cart {
   position: relative;
 }
 .menu-section .menu-container {
-  padding: 1rem 0 2rem;
+  padding: 1rem 0 3rem;
   margin: 1rem 0;
 }
 .menu-section .menu-container .menu-content .menu-item .menu-list {
@@ -12125,7 +12125,7 @@ header .navbar .right-side-nav .cart {
   width: 260px;
 }
 .menu-section .menu-container .menu-content .menu-item .menu-list .card:hover {
-  transform: scale(0.9);
+  transform: scale(1.1);
 }
 @media (min-width: 576px) {
   .menu-section .menu-container .menu-content .menu-item .menu-list .card {
