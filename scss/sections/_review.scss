@@ -25,6 +25,9 @@
     
                         .card-text{
                             font-size: .875rem;
+                            @include media-breakpoint-only(md) {
+                                height: 105px;
+                            }
                         }
 
                         .card-title{
