@@ -12522,33 +12522,33 @@ footer .footer-section .footer-content .other-link ul li a:hover {
 .about-page .mission-section .mission-container .mission-wrapper .image-container img {
   width: 100%;
 }
-.about-page .vission-section {
+.about-page .vision-section {
   padding: 0 1rem;
 }
 @media (max-width: 767.98px) {
-  .about-page .vission-section .vission-container .vission-wrapper .image-container {
+  .about-page .vision-section .vision-container .vision-wrapper .image-container {
     order: 2;
   }
 }
-.about-page .vission-section .vission-container .vission-wrapper .image-container img {
+.about-page .vision-section .vision-container .vision-wrapper .image-container img {
   width: 100%;
 }
-.about-page .vission-section .vission-container .text-area {
+.about-page .vision-section .vision-container .text-area {
   margin: 0 0 0 2rem;
 }
 @media (max-width: 767.98px) {
-  .about-page .vission-section .vission-container .text-area {
+  .about-page .vision-section .vision-container .text-area {
     margin: 0;
     order: 1;
   }
 }
-.about-page .vission-section .vission-container .text-area h1 {
+.about-page .vision-section .vision-container .text-area h1 {
   margin: 0 0 1.5rem;
   color: #fff;
   font-weight: 600;
   text-align: center;
 }
-.about-page .vission-section .vission-container .text-area p {
+.about-page .vision-section .vision-container .text-area p {
   color: #fff;
   line-height: 1.75rem;
 }
